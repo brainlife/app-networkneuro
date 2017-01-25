@@ -1,0 +1,24 @@
+{
+  "name": "sca-service-networkneuro",
+  "version": "1.0.0",
+  "description": "run networkneuro",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start.sh",
+    "stop": "stop.sh",
+    "status": "status.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soichih/sca-service-networkneuro"
+  },
+  "author": "Soichi Hayashi <hayashis@iu.edu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soichih/sca-service-networkneuro/issues"
+  },
+  "homepage": "https://github.com/soichih/sca-service-networkneuro"
+}

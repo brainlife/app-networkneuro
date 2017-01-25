@@ -1,0 +1,38 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=32
+#PBS -l walltime=00:10:00
+#PBS -l gres=ccm
+#PBS -N networkneuro
+#PBS -V
+
+#if [ ! -z $PBS_O_WORKDIR ]; then cd $PBS_O_WORKDIR; fi
+cd $PBS_O_WORKDIR
+
+module load matlab
+module load ccm
+#module load spm
+
+#this allows running this script locally (for development)
+if [ -z $SCA_WORKFLOW_DIR ]; then export SCA_WORKFLOW_DIR=`pwd`; fi
+if [ -z $SCA_TASK_DIR ]; then export SCA_TASK_DIR=`pwd`; fi
+if [ -z $SCA_SERVICE_DIR ]; then export SCA_SERVICE_DIR=`pwd`; fi
+
+#TODO .. any shell script should go here (prefix all script path with $SCA_SERVICE_DIR)
+# $SCA_SERVICE_DIr/script.sh
+#
+#
+
+#TODO.. then, if you have any matlab script, you should call it from main. But main 
+#does the parsing of config.json (input parameter) and pass it to various matlab function
+#main should also take care of writing out any output files.
+#
+export MATLABPATH=$MATLABPATH:$SCA_SERVICE_DIR
+ccmrun matlab -nodisplay -nosplash -r main
+code=$?
+if [ $code -eq 0 ]; then
+    echo '{}' > products.json #fake products.json for now..
+fi
+
+#Finally, report exit code
+echo $code > finished 
+
