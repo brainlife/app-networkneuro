@@ -1,0 +1,6 @@
+{ 
+    "EndMatrices":"emat.mat",
+    "ClnMatrices":"cmat.mat",
+    "PairedConns":"pconn.mat",
+    "roi_data":"out.mat"
+}

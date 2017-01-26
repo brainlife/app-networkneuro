@@ -9,19 +9,15 @@ addpath(genpath('/N/u/hayashis/BigRed2/git/afq'))
 % load my own config.json
 config = loadjson('config.json');
 
-% Load an FE strcuture specified in the config.fe
-load(config.fe);
+%% run the network generation process - condensed to a funcion
 
-fprintf('TODO - freesurfer outdir: %s\n', config.freesurfer);
+[ emat, cmat, pconn, out, nmat, imat ] = feMatrixFromTensor_clean(config.fe, config.fsdir, config.cachedir, config.ncores);
 
-% Extract the fascicle weights from the fe structure
-% Dependency "encode".
-w = feGet(fe,'fiber weights');
-
-% Extract the fascicles
-fg = feGet(fe,'fibers acpc');        
-
-% Eliminte the fascicles with non-zero entries
-% Dependency "vistasoft"
-fg = fgExtract(fg, w > 0, 'keep');
+% save the outputs
+save('emat.mat', emat);
+save('cmat.mat', cmat);
+save('pconn.mat', pconn);
+save('out.mat', out);
+save('nmat.mat', nmat);
+save('imat.mat', imat);
 

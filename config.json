@@ -1,4 +1,6 @@
 { 
     "fe": "/N/u/hayashis/Karst/testdata/sca-service-networkneuro/output_fe.mat",
-    "freesurfer": "/N/u/hayashis/Karst/testdata/sca-service-networkneuro/freesurfer"
+    "fsdir":"/N/u/hayashis/Karst/testdata/sca-service-networkneuro/freesurfer/SUBJ/labels/",
+    "cachedir":"./",
+    "ncores":"16"
 }
