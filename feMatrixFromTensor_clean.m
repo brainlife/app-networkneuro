@@ -204,7 +204,7 @@ display('Finding edge between each ROI pairing...');
 pairs = nchoosek(1:length(roiNames), 2);
 
 % for every unique pair, find intersecting fibers
-parfor ii = 1:length(pairs)
+for ii = 1:length(pairs)
     
     % pull output regions into tmp objects for clarity of code
     reg1 = out{pairs(ii, 1)};
