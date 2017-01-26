@@ -19,8 +19,6 @@ if [ -z $SCA_SERVICE_DIR ]; then export SCA_SERVICE_DIR=`pwd`; fi
 #TODO .. any shell script should go here (prefix all script path with $SCA_SERVICE_DIR)
 $SCA_SERVICE_DIR/preprocess.sh
 
-exit
-
 #TODO.. then, if you have any matlab script, you should call it from main. But main 
 #does the parsing of config.json (input parameter) and pass it to various matlab function
 #main should also take care of writing out any output files.
