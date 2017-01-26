@@ -688,5 +688,75 @@ cmat(:,:,16) = ckl;
 %clear isoe esoe csoe ijd ejd cjd ikl ekl ckl
 clear esoe csoe ejd cjd ekl ckl
 
+%% create and save some plots
+
+% uncleaned streamline count
+figure();
+colormap('hot');
+imagesc(log(emat(:,:,1)));
+axis('square'); axis('equal'); axis('tight');
+title('Streamline Count');
+xlabel('FS DK Regions');
+ylabel('FS DK Regions');
+y = colorbar;
+ylabel(y, 'Log Number of Streamlines');
+set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
+line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
+line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
+line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
+saveas(gcf, './uncleaned_edge_count.png');
+close all;
+
+% cleaned streamline count
+figure();
+colormap('hot');
+imagesc(log(cmat(:,:,1)));
+axis('square'); axis('equal'); axis('tight');
+title('Cleaned Streamline Count');
+xlabel('FS DK Regions');
+ylabel('FS DK Regions');
+y = colorbar;
+ylabel(y, 'Log Number of Streamlines');
+set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
+line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
+line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
+line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
+saveas(gcf, './cleaned_edge_count.png');
+close all;
+
+% uncleaned EMD
+figure();
+colormap('hot');
+imagesc(log(emat(:,:,10)));
+axis('square'); axis('equal'); axis('tight');
+title('EMD');
+xlabel('FS DK Regions');
+ylabel('FS DK Regions');
+y = colorbar;
+ylabel(y, 'Log Scanner Units');
+set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
+line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
+line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
+line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
+saveas(gcf, './uncleaned_edge_emd.png');
+close all;
+
+% cleaned EMD
+figure();
+colormap('hot');
+imagesc(log(cmat(:,:,10)));
+axis('square'); axis('equal'); axis('tight');
+title('Cleaned EMD');
+xlabel('FS DK Regions');
+ylabel('FS DK Regions');
+y = colorbar;
+ylabel(y, 'Log Scanner Units');
+set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
+line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
+line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
+line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
+saveas(gcf, './cleaned_edge_emd.png');
+close all;
+
 end
 
