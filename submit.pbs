@@ -1,6 +1,6 @@
 #!/bin/bash
 #PBS -l nodes=1:ppn=32
-#PBS -l walltime=00:10:00
+#PBS -l walltime=10:00:00
 #PBS -l gres=ccm
 #PBS -N networkneuro
 #PBS -V
@@ -18,9 +18,7 @@ if [ -z $SCA_TASK_DIR ]; then export SCA_TASK_DIR=`pwd`; fi
 if [ -z $SCA_SERVICE_DIR ]; then export SCA_SERVICE_DIR=`pwd`; fi
 
 #TODO .. any shell script should go here (prefix all script path with $SCA_SERVICE_DIR)
-# $SCA_SERVICE_DIr/script.sh
-#
-#
+$SCA_SERVICE_DIR/preprocess.sh
 
 #TODO.. then, if you have any matlab script, you should call it from main. But main 
 #does the parsing of config.json (input parameter) and pass it to various matlab function
