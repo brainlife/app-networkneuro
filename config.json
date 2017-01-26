@@ -1,7 +1,0 @@
-{ 
-    "fe": "/N/u/hayashis/Karst/testdata/sca-service-networkneuro/output_fe.mat",
-    "fsdir-b": "/N/u/hayashis/Karst/testdata/sca-service-networkneuro/freesurfer",
-    "fsdir": "/N/dc2/projects/lifebid/2t1/anatomy/pestilli_test",
-    "cachedir": "./cache",
-    "ncores": 32
-}
