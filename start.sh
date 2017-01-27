@@ -4,6 +4,7 @@
 if [ -z $SCA_WORKFLOW_DIR ]; then export SCA_WORKFLOW_DIR=`pwd`; fi
 if [ -z $SCA_TASK_DIR ]; then export SCA_TASK_DIR=`pwd`; fi
 if [ -z $SCA_SERVICE_DIR ]; then export SCA_SERVICE_DIR=`pwd`; fi
+if [ -z $SCA_PROGRESS_URL ]; then export SCA_PROGRESS_URL="https://soichi7.ppa.iu.edu/api/progress/status/_sca.test"; fi
 
 #make sure jq is installed on $SCA_SERVICE_DIR (will be used in submit.pbs?)
 #if [ ! -f $SCA_SERVICE_DIR/jq ];
