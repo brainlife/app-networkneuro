@@ -36,7 +36,7 @@ set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
 line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
 line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
 line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
-saveas(gcf, './uncleaned_edge_count.png');
+saveas(gcf, './uncleaned_edge_density.png');
 close all;
 
 % cleaned streamline count
@@ -53,7 +53,7 @@ set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
 line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
 line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
 line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
-saveas(gcf, './cleaned_edge_count.png');
+saveas(gcf, './cleaned_edge_density.png');
 close all;
 
 % uncleaned EMD
