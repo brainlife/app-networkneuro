@@ -17,12 +17,14 @@ function [ emat, cmat, pconn, out, nmat, imat ] = feMatrixFromTensor_clean(feStr
 % roiDir   = '/N/dc2/projects/lifebid/glue/subjects/100063/anat/DKAtlas';
 % cacheDir = '/N/dc2/projects/lifebid/glue/matlab/parCache';
 % nclust   = 8;
+%
+% tic; [ emat, cmat, pconn, out, nmat, imat] = feMatrixFromTensor_clean('test/fe_structure_105115_STC_run01_SD_PROB_lmax10_connNUM01.mat', 'test/roiDir', 'test/cache', 8); time = toc;
+%
 
 %% check for fxns on path?
 % parpool
 % dtiImportRoiFromNifti
 % mrAnatXformCoords
-% BCT
 % arguments for cleaning parameters, 3 default
 
 %% load data / ROIs
@@ -67,8 +69,8 @@ if OK
     c.JobStorageLocation = t;
 end
 
-% start parpool
-parpool(c, nclust, 'IdleTimeout', 720);
+% start parpool - close parpool at end of fxn
+parpool(c, nclust, 'IdleTimeout', Inf);
 
 % convert all fiber nodes to voxel coord indices in tensor
 display('Finding nodes...');
@@ -82,8 +84,14 @@ fibLength = fefgGet(fe.fg, 'length'); % instantly
 
 display('Finding ROI fibers...');
 
+% preallocate out
+out = cell(1, length(roiNames));
+
 % for every roi 
 for ii = 1:length(roiNames)
+    
+    % initialize vx as structure for parallel execution
+    vx = struct();
     
     % put ROI name in output
     out{ii}.name = roiNames{ii};
@@ -190,7 +198,7 @@ for ii = 1:length(roiNames)
     out{ii}.nid.nzleng = out{ii}.nid.lengths(nzend);
     out{ii}.nid.nzwght = out{ii}.nid.weights(nzend);
     
-    clear roi vx inds1 jj nzint nzend 
+    %clear roi vx inds1 jj nzint nzend 
 end
 
 % clean up workspace
@@ -203,8 +211,11 @@ display('Finding edge between each ROI pairing...');
 % create combinations
 pairs = nchoosek(1:length(roiNames), 2);
 
+% preallocate pconn
+pconn = cell(1, length(pairs));
+
 % for every unique pair, find intersecting fibers
-for ii = 1:length(pairs)
+parfor ii = 1:length(pairs)
     
     % pull output regions into tmp objects for clarity of code
     reg1 = out{pairs(ii, 1)};
@@ -347,7 +358,6 @@ end
 clear comb ii pt1 pt2
 
 % run all the cleaning in a loop
-
 display('Cleaning outlier fibers from individual connections...');
 
 for ii = 1:length(pconn)
@@ -406,7 +416,7 @@ for ii = 1:length(pconn)
     pconn{ii}.cln.nzleng = pconn{ii}.end.nzleng(zkeep);
     pconn{ii}.cln.nzwght = pconn{ii}.end.nzwght(zkeep);
     
-    clear tafg tzfg akeep zkeep
+    %clear tafg tzfg akeep zkeep
     
 end
 
@@ -430,9 +440,10 @@ display('Running virtual lesion...');
 % 
 
 for ii = 1:length(pconn)
-   
+
     % virtual lesion on end points
     try
+        
         [ ewVL, ewoVL ] = feComputeVirtualLesion(fe, pconn{ii}.end.nzfibs);
         pconn{ii}.end.vl = feComputeEvidence(ewoVL, ewVL);
         
@@ -450,17 +461,18 @@ for ii = 1:length(pconn)
         [ cwVL, cwoVL ] = feComputeVirtualLesion(fe, pconn{ii}.cln.nzfibs);
         pconn{ii}.cln.vl = feComputeEvidence(cwoVL, cwVL);
         
-    catch
-        
+    catch        
         pconn{ii}.cln.vl.s.mean = 0;
         pconn{ii}.cln.vl.em.mean = 0;
         pconn{ii}.cln.vl.j.mean = 0;
         pconn{ii}.cln.vl.kl.mean = 0;
     end
     
-    clear ewVL ewoVL cwVL cwoVL
+   % clear ewVL ewoVL cwVL cwoVL
     
 end
+
+clear ewVL ewoVL cwVL cwoVL
 
 display('Create output matrices...');
 
@@ -630,7 +642,7 @@ end
 
 %% clean up matrices
 
-% fix zeros / nan
+% fix nan
 for ii = 1:size(emat, 3)
     
     %ilen = imat(:,:,ii);
@@ -651,42 +663,85 @@ end
 
 % isoe = imat(:,:,9);
 % isoe(isoe < 0) = 0;
-% imat(:,:,13) = isoe;
+% imat(:,:,9) = isoe;
 
 esoe = emat(:,:,9);
 esoe(esoe < 0) = 0;
-emat(:,:,13) = esoe;
+emat(:,:,9) = esoe;
 
 csoe = cmat(:,:,9);
 csoe(csoe < 0) = 0;
-cmat(:,:,13) = csoe;
+cmat(:,:,9) = csoe;
 
 % ijd = imat(:,:,11);
 % ijd(ijd < 0) = 0;
-% imat(:,:,15) = ijd;
+% imat(:,:,11) = ijd;
 
 ejd = emat(:,:,11);
 ejd(ejd < 0) = 0;
-emat(:,:,15) = ejd;
+emat(:,:,11) = ejd;
 
 cjd = cmat(:,:,11);
 cjd(cjd < 0) = 0;
-cmat(:,:,15) = cjd;
+cmat(:,:,11) = cjd;
 
 % ikl = imat(:,:,12);
 % ikl(ikl < 0) = 0;
-% imat(:,:,16) = ikl;
+% imat(:,:,12) = ikl;
 
 ekl = emat(:,:,12);
 ekl(ekl < 0) = 0;
-emat(:,:,16) = ekl;
+emat(:,:,12) = ekl;
 
 ckl = cmat(:,:,12);
 ckl(ckl < 0) = 0;
-cmat(:,:,16) = ckl;
+cmat(:,:,12) = ckl;
 
 %clear isoe esoe csoe ijd ejd cjd ikl ekl ckl
 clear esoe csoe ejd cjd ekl ckl
 
+% close parallel pool?
+delete(gcp);
+
 end
 
+% % plot the final and cleaned matrices side by side for comparison
+% for ii = 1:12
+%     
+%     try
+%         figure('Position', [580 580 1080 680]);
+%         subplot(1, 2, 1);
+%         colormap('hot');
+%         imagesc(log(emat(:,:,ii)));
+%         axis('square'); axis('equal'); axis('tight');
+%         title('Full Connectome Network');
+%         xlabel('FS DK Regions');
+%         ylabel('FS DK Regions');
+%         y = colorbar;
+%         ylabel(y, 'Log Number of Streamlines');
+%         set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
+%         line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
+%         line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
+%         line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
+%         
+%         subplot(1, 2, 2);
+%         colormap('hot');
+%         imagesc(log(cmat(:,:,ii)));
+%         axis('square'); axis('equal'); axis('tight');
+%         title('Cleaned Connectome Network');
+%         xlabel('FS DK Regions');
+%         ylabel('FS DK Regions');
+%         y = colorbar;
+%         ylabel(y, 'Log Number of Streamlines');
+%         set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
+%         line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
+%         line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
+%         line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
+%         
+%     catch
+%         display(['plot: ' num2str(ii) ' is broke']);
+%     end
+%         
+% end
+%
+% clear ii y
