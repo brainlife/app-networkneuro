@@ -9,7 +9,7 @@ addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
 config = loadjson('config.json');
 
 % run the network generation process - condensed to a funcion
-[ emat, cmat, pconn, out, nmat, imat ] = feMatrixFromTensor_clean(config.fe, 'rois', config.cachedir, config.ncores);
+[ emat, cmat, pconn, out, nmat, imat ] = feMatrixFromTensor_clean(config.fe, 'rois', config.cachedir, 16);
 
 % save the outputs
 mkdir('output');

@@ -31,7 +31,7 @@ if [ -f jobid ]; then
     if [ $jobstate == "Q" ]; then
         echo "Waiting in the queue"
         eststart=`showstart $jobid | grep start`
-        curl -s -X POST -H "Content-Type: application/json" -d "{\"msg\":\"Waiting in the PBS queue : $eststart\"}" $SCA_PROGRESS_URL
+        curl -s -X POST -H "Content-Type: application/json" -d "{\"msg\":\"Waiting in the PBS queue : $eststart\"}" $SCA_PROGRESS_URL > /dev/null
         exit 0
     fi
     if [ $jobstate == "R" ]; then
@@ -48,6 +48,6 @@ if [ -f jobid ]; then
     exit 2
 fi
 
-echo "can't determine the status!"
+echo "can't determine the status! maybe not started yet?"
 exit 3
 

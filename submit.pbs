@@ -10,7 +10,6 @@ if [ ! -z $PBS_O_WORKDIR ]; then cd $PBS_O_WORKDIR; fi
 
 module load matlab
 module load ccm
-#module load spm
 
 #this allows running this script locally (for development)
 if [ -z $SCA_WORKFLOW_DIR ]; then export SCA_WORKFLOW_DIR=`pwd`; fi
@@ -30,11 +29,5 @@ fi
 #
 export MATLABPATH=$MATLABPATH:$SCA_SERVICE_DIR
 ccmrun matlab -nodisplay -nosplash -r main
-code=$?
-if [ $code -eq 0 ]; then
-    echo '{}' > products.json #fake products.json for now..
-fi
-
-#Finally, report exit code
-echo $code > finished 
+echo $? > finished 
 
