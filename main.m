@@ -15,12 +15,12 @@ config = loadjson('config.json');
 
 % save the outputs
 mkdir('output');
-save('output/emat.mat', emat);
-save('output/cmat.mat', cmat);
-save('output/pconn.mat', pconn);
-save('output/out.mat', out);
-save('output/mat.mat', nmat);
-save('output/imat.mat', imat);
+save('output/emat.mat', 'emat');
+save('output/cmat.mat', 'cmat');
+save('output/pconn.mat', 'pconn');
+save('output/out.mat', 'out');
+save('output/mat.mat', 'nmat');
+save('output/imat.mat', 'imat');
 
 %% create and save some plots
 
