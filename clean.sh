@@ -7,3 +7,4 @@ rm -rf cache
 rm -rf labels
 rm -rf rois
 rm reg.dat
+rm -rf output
