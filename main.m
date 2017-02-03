@@ -10,6 +10,7 @@ addpath(genpath('/N/u/hayashis/BigRed2/git/mba'))
 config = loadjson('config.json');
 
 % run the network generation process - condensed to a funcion
+% using 32 cores seems to cause OOM
 [ emat, cmat, pconn, out, nmat, imat ] = feMatrixFromTensor_clean(config.fe, 'rois', config.cachedir, 16);
 
 % save the outputs

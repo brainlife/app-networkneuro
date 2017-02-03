@@ -3,6 +3,7 @@
 #return code 0 = running
 #return code 1 = finished successfully
 #return code 2 = failed
+#return code 3 = status unknown
 
 ##now wait for running to go away
 if [ -z $SCA_WORKFLOW_DIR ]; then export SCA_WORKFLOW_DIR=`pwd`; fi
@@ -29,8 +30,8 @@ if [ -f jobid ]; then
         exit 2
     fi
     if [ $jobstate == "Q" ]; then
-        echo "Waiting in the queue"
         eststart=`showstart $jobid | grep start`
+        echo "Waiting in the queue - $eststart"
         curl -s -X POST -H "Content-Type: application/json" -d "{\"msg\":\"Waiting in the PBS queue : $eststart\"}" $SCA_PROGRESS_URL > /dev/null
         exit 0
     fi
