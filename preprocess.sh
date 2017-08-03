@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export fsdir=`$SCA_SERVICE_DIR/jq -r '.fsdir' config.json`
+export fsdir=`$SERVICE_DIR/jq -r '.fsdir' config.json`
 module load freesurfer/5.3.0
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
@@ -31,7 +31,7 @@ echo "Create all left label NIfTIs..."
 mkdir -p rois
 for h in lh rh
 do
-    cat $SCA_SERVICE_DIR/roi_labels.txt | while read label
+    cat $SERVICE_DIR/roi_labels.txt | while read label
     do
         echo "$label --------------------------- "
         mri_label2vol --subject "." \
