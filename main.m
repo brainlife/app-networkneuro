@@ -7,9 +7,6 @@ addpath(genpath('/N/u/hayashis/BigRed2/git/vistasoft'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/mba'))
 
-% run preprocessing
-eval('!./preprocess.sh');
-
 % load my own config.json
 config = loadjson('config.json');
 
