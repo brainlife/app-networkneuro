@@ -2,19 +2,22 @@ function [] = main()
 
 disp('loading paths')
 addpath(genpath('/N/u/hayashis/BigRed2/git/encode'))
-addpath(genpath('/N/u/hayashis/BigRed2/git/fine'))
+addpath(genpath('/N/dc2/projects/lifebid/lifeconn/lifeconn'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/vistasoft'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/mba'))
+
+% run preprocessing
+eval('!./preprocess.sh');
 
 % load my own config.json
 config = loadjson('config.json');
 
 % create the labels
-labels = fsInflateDK(config.labels, 3, 'vert', 'aparc+aseg_labels.nii.gz');
+labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', 'aparc+aseg_labels.nii.gz');
 
 % run the network generation process
-[ pconn, rois, omat, olab ] = fnBuildNetworks(config.fe, labels, config.fa, config.output, 4, config.cache)
+[ pconn, rois, omat, olab ] = fnBuildNetworks_brain-life(config.fe, labels, 4, config.cachedir)
 
 % save the outputs
 mkdir('output');
