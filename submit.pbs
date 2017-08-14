@@ -3,26 +3,29 @@
 #PBS -l walltime=15:00:00
 #PBS -q cpu
 #PBS -l gres=ccm
-#PBS -N networkneuro
+#PBS -N app-networkneuro
 #PBS -V
 
-if [ ! -z $PBS_O_WORKDIR ]; then cd $PBS_O_WORKDIR; fi
+[ $PBS_O_WORKDIR ] && cd $PBS_O_WORKDIR
 
 module load matlab
 module load ccm
 
 #this allows running this script locally (for development)
-if [ -z $SCA_WORKFLOW_DIR ]; then export SCA_WORKFLOW_DIR=`pwd`; fi
-if [ -z $SCA_TASK_DIR ]; then export SCA_TASK_DIR=`pwd`; fi
-if [ -z $SCA_SERVICE_DIR ]; then export SCA_SERVICE_DIR=`pwd`; fi
+if [ -z $SERVICE_DIR ]; then export SERVICE_DIR=`pwd`; fi
 
-$SCA_SERVICE_DIR/preprocess.sh
+$SERVICE_DIR/preprocess.sh
 if [ $? -ne 0 ]; then
     echo "preprocessing failed"
     exit 1 
 fi
 
-export MATLABPATH=$MATLABPATH:$SCA_SERVICE_DIR
+export MATLABPATH=$MATLABPATH:$SERVICE_DIR
 ccmrun matlab -nodisplay -nosplash -r main
-echo $? > finished 
-
+if [ -d output ];
+then
+	echo 0 > finished
+else
+	echo 1 > finished
+	exit 1
+fi

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export fsdir=`$SCA_SERVICE_DIR/jq -r '.fsdir' config.json`
+export fsdir=`$SERVICE_DIR/jq -r '.fsdir' config.json`
 module load freesurfer/5.3.0
 source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
