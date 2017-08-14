@@ -2,7 +2,7 @@ function [] = main()
 
 disp('loading paths')
 addpath(genpath('/N/u/hayashis/BigRed2/git/encode'))
-addpath(genpath('/N/dc2/projects/lifebid/lifeconn/lifeconn'))
+addpath(genpath('/N/u/hayashis/BigRed2/git/fine'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/vistasoft'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
 addpath(genpath('/N/u/hayashis/BigRed2/git/mba'))
