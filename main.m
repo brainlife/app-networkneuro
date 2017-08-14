@@ -17,7 +17,7 @@ config = loadjson('config.json');
 labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', 'aparc+aseg_labels.nii.gz');
 
 % run the network generation process
-[ pconn, rois, omat, olab ] = fnBuildNetworks_brain-life(config.fe, labels, 4, config.cachedir)
+[ pconn, rois, omat, olab ] = fnBuildNetworks_brainlife(config.fe, labels, 4, config.cachedir)
 
 % save the outputs
 mkdir('output');
