@@ -11,7 +11,7 @@ addpath(genpath('/N/u/hayashis/BigRed2/git/mba'))
 config = loadjson('config.json');
 
 % create the labels
-labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', 'aparc+aseg_labels.nii.gz');
+labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', './output/aparc+aseg_labels.nii.gz');
 
 % run the network generation process
 [ pconn, rois, omat, olab ] = fnBuildNetworks_brainlife(config.fe, labels, 4, config.cachedir)
@@ -39,7 +39,7 @@ set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
 line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
 line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
 line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
-saveas(gcf, './edge_density.png');
+saveas(gcf, './output/edge_density.png');
 close all;
 
 % cleaned streamline count
@@ -56,6 +56,6 @@ set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
 line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
 line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
 line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
-saveas(gcf, './edge_LiFE.png');
+saveas(gcf, './output/edge_LiFE.png');
 close all;
 
