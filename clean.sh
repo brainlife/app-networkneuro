@@ -1,7 +1,7 @@
 rm finished
 rm jobid
-rm app-networkneuro.o*
-rm app-networkneuro.e*
+rm networkneuro.o*
+rm networkneuro.e*
 rm -rf cache
 rm -rf labels
 rm -rf rois

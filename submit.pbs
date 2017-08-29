@@ -3,7 +3,7 @@
 #PBS -l walltime=15:00:00
 #PBS -q cpu
 #PBS -l gres=ccm
-#PBS -N app-networkneuro
+#PBS -N networkneuro
 #PBS -V
 
 [ $PBS_O_WORKDIR ] && cd $PBS_O_WORKDIR
