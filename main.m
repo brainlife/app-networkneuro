@@ -10,6 +10,9 @@ addpath(genpath('/N/u/hayashis/BigRed2/git/mba'))
 % load my own config.json
 config = loadjson('config.json');
 
+% create output directory
+mkdir('output');
+
 % create the labels
 labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', './output/aparc+aseg_labels.nii.gz');
 
@@ -17,7 +20,6 @@ labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', './output/aparc+aseg_labe
 [ pconn, rois, omat, olab ] = fnBuildNetworks_brainlife(config.fe, labels, 4, config.cachedir)
 
 % save the outputs
-mkdir('output');
 save('output/omat.mat', 'omat');
 save('output/olab.mat', 'olab');
 save('output/pconn.mat', 'pconn');
