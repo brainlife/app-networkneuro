@@ -25,6 +25,10 @@ save('output/olab.mat', 'olab');
 save('output/pconn.mat', 'pconn');
 save('output/rois.mat', 'rois');
 
+% save text outputs
+dlmwrite('./output/density.csv', omat(:,:,2), ',');
+dlmwrite('./output/emd.csv', omat(:,:,10), ',');
+
 %% create and save some plots
 
 % uncleaned streamline count
@@ -32,7 +36,7 @@ figure();
 colormap('hot');
 imagesc(log10(omat(:,:,2)));
 axis('square'); axis('equal'); axis('tight');
-title('Log Streamline Density');
+title('Log_{10} Streamline Density');
 xlabel('FS DK Regions');
 ylabel('FS DK Regions');
 y = colorbar;
@@ -53,7 +57,7 @@ title('Log_{10} LiFE');
 xlabel('FS DK Regions');
 ylabel('FS DK Regions');
 y = colorbar;
-ylabel(y, 'Log of LiFE EMD');
+ylabel(y, 'Log_{10} of LiFE EMD');
 set(gca, 'XTickLabel', '', 'YTickLabel', '', 'XTick', [], 'YTick', []);
 line([34.5 34.5], [0.5 68.5], 'Color', [0 0 1]);
 line([0.5 68.5], [34.5 34.5], 'Color', [0 0 1]);
