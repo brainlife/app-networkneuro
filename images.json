@@ -1,10 +1,10 @@
 {
         "images": [{
-                    "filename": "output/fe_AFQ_StatPlot.png",
+                    "filename": "output/edge_density.png",
                     "name": "Streamline Density Network",
                     "desc": "Streamline Density Network"},
                    {
-                    "filename": "output/other.png",
+                    "filename": "output/edge_LiFE.png",
                     "name": "LiFE EMD Network", 
                     "desc": "LiFE EMD Network"}
                   ]
