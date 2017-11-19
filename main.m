@@ -20,7 +20,7 @@ mkdir('cache');
 labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', './output/aparc+aseg_labels.nii.gz');
 
 % run the network generation process
-[ pconn, rois, omat, olab ] = fnBuildNetworks_brainlife(config.fe, labels, 4, 'cache')
+[ pconn, rois, omat, olab ] = fnBuildNetworks_brainlife(config.fe, labels, 4, './cache')
 
 % save the outputs
 save('output/omat.mat', 'omat');
