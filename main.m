@@ -13,11 +13,14 @@ config = loadjson('config.json');
 % create output directory
 mkdir('output');
 
+% create cache dir
+mkdir('cache');
+
 % create the labels
 labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', './output/aparc+aseg_labels.nii.gz');
 
 % run the network generation process
-[ pconn, rois, omat, olab ] = fnBuildNetworks_brainlife(config.fe, labels, 4, config.cachedir)
+[ pconn, rois, omat, olab ] = fnBuildNetworks_brainlife(config.fe, labels, 4, 'cache')
 
 % save the outputs
 save('output/omat.mat', 'omat');
@@ -26,6 +29,7 @@ save('output/pconn.mat', 'pconn');
 save('output/rois.mat', 'rois');
 
 % save text outputs
+dlmwrite('./output/count.csv', omat(:,:,1), ',');
 dlmwrite('./output/density.csv', omat(:,:,2), ',');
 dlmwrite('./output/emd.csv', omat(:,:,10), ',');
 
