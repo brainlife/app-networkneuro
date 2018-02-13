@@ -1,12 +1,12 @@
 #!/bin/bash
 
 export fsdir=`$SERVICE_DIR/jq -r '.fsdir' config.json`
-module load freesurfer/5.3.0
-source $FREESURFER_HOME/SetUpFreeSurfer.sh
+#module load freesurfer/5.3.0
+#source $FREESURFER_HOME/SetUpFreeSurfer.sh
 
 echo "Create individual label files..."
-mkdir -p labels
-export SUBJECTS_DIR=$fsdir
+#mkdir -p labels
+#export SUBJECTS_DIR=$fsdir
 
 mri_convert $fsdir/mri/aparc+aseg.mgz --out_orientation RAS ./aparc+aseg.nii.gz
 

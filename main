@@ -1,0 +1,17 @@
+#!/bin/bash
+
+module load singularity 2> /dev/null
+
+## run file conversion shell
+singularity exec -e docker://brainlife/freesurfer ./preprocess
+
+## run main
+singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiled/main
+
+echo "Network Pipeline Complete"
+
+if [ ! -s pconn.mat ];
+then
+	echo "output missing"
+	exit 1
+fi
