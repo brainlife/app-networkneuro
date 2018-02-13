@@ -3,7 +3,8 @@
 module load singularity 2> /dev/null
 
 ## run file conversion shell
-singularity exec -e docker://brainlife/freesurfer ./preprocess.sh
+#singularity exec -e docker://brainlife/freesurfer ./preprocess.sh
+./preprocess.sh
 
 ## run main
 singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiled/main
