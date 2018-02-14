@@ -16,6 +16,8 @@ mkdir('output');
 % create cache dir
 mkdir('cache');
 
+%# function sptensor
+
 % create the labels
 labels = fsInflateDK('./aparc+aseg.nii.gz', 3, 'vert', 0, './output/aparc+aseg_labels.nii.gz');
 
