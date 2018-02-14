@@ -2,16 +2,19 @@
 
 module load singularity 2> /dev/null
 
+## parse argument for path to file
+export fsdir=`$SERVICE_DIR/jq -r '.fsdir' config.json`
+
 ## run file conversion shell
 #singularity exec -e docker://brainlife/freesurfer ./preprocess.sh
-time singularity exec -e docker://brainlife/freesurfer:6.0.0 bash -c "echo $FREESURFER_LICENSE > /usr/local/freesurfer/license.txt && ./preprocess.sh"
+time singularity exec -e docker://brainlife/freesurfer:6.0.0 bash -c "echo $FREESURFER_LICENSE > /usr/local/freesurfer/license.txt && mri_convert $fsdir/mri/aparc+aseg.mgz --out_orientation RAS aparc+aseg.nii.gz"
 
 ## run main
 time singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiled/main
 
 echo "Network Pipeline Complete"
 
-if [ ! -s pconn.mat ];
+if [ ! -s output/pconn.mat ];
 then
     echo "output missing"
     exit 1
