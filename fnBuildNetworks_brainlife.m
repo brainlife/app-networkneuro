@@ -74,7 +74,7 @@ clear tmpdir OK
 [ pconn, rois ] = feCreatePairedConnections(parc, fg.fibers, fascicle_length, fascicle_weights);
 
 % virtual lesion matrix
-pconn = feVirtualLesionPairedConnections(M, fascicle_weights, measured_dsig, nTheta, pconn, 'nzw');
+pconn = feVirtualLesionPairedConnections(pconn, 'nzw', M, fascicle_weights, measured_dsig, nTheta);
 
 %% create adjacency matrices
 
@@ -84,7 +84,7 @@ pconn = feVirtualLesionPairedConnections(M, fascicle_weights, measured_dsig, nTh
 
 % combine outputs and labels into 1 matrix
 omat = cat(3, amat, nmat);
-olab = [ alab nlab ];
+olab = [ alab; nlab ];
 
 % remove parallel pool
 delete(pool);
