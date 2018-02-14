@@ -9,5 +9,5 @@ export fsdir=`$SERVICE_DIR/jq -r '.fsdir' config.json`
 echo "Create subject labels..."
 
 ## run file conversion docker
-singularity exec -e docker://brainlife/freesurfer mri_convert $fsdir/mri/aparc+aseg.mgz --out_orientation RAS ./aparc+aseg.nii.gz
+singularity exec -e docker://brainlife/freesurfer mri_convert $fsdir/mri/aparc+aseg.mgz --out_orientation RAS aparc+aseg.nii.gz
 
