@@ -1,2 +1,5 @@
+aparc+aseg.nii.gz
+cache/
+output/
 config.json
 *~
