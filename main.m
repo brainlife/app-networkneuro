@@ -91,6 +91,8 @@ edgeDensityPlot.data.colorscale = colorscale;
 edgeDensityPlot.data = { edgeDensityPlot.data };
 
 edgeDensityPlot.layout.title = 'Log (base 10) Density of Streamlines';
+edgeDensityPlot.layout.width = 500;
+edgeDensityPlot.layout.height = 500;
 
 edgeDensityPlot.layout.xaxis = struct;
 edgeDensityPlot.layout.xaxis.title = 'FS DK Regions';
@@ -111,6 +113,8 @@ edgeLiFEPlot.data.colorscale = colorscale;
 edgeLiFEPlot.data = { edgeLiFEPlot.data };
 
 edgeLiFEPlot.layout.title = 'Log (base 10) of LiFE EMD';
+edgeLiFEPlot.layout.width = 500;
+edgeLiFEPlot.layout.height = 500;
 
 edgeLiFEPlot.layout.xaxis = struct;
 edgeLiFEPlot.layout.xaxis.title = 'FS DK Regions';
