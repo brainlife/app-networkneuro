@@ -81,6 +81,7 @@ colorscale = { { 0, '#000000'}, ...
 
 % edge density plot
 edgeDensityPlot = struct;
+edgeDensityPlot.type = 'plotly';
 edgeDensityPlot.data = struct;
 edgeDensityPlot.layout = struct;
 
@@ -100,6 +101,7 @@ edgeDensityPlot.layout.yaxis.title = 'FS DK Regions';
 % LiFE EMD plot
 
 edgeLiFEPlot = struct;
+edgeLiFEPlot.type = 'plotly';
 edgeLiFEPlot.data = struct;
 edgeLiFEPlot.layout = struct;
 
