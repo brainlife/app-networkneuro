@@ -85,7 +85,7 @@ edgeDensityPlot.data = struct;
 edgeDensityPlot.layout = struct;
 
 edgeDensityPlot.data.type = 'heatmap';
-edgeDensityPlot.data.z = flipYAxis(log10(omat(:, :, 2)));
+edgeDensityPlot.data.z = mirrorY(log10(omat(:, :, 2)));
 edgeDensityPlot.data.colorscale = colorscale;
 edgeDensityPlot.data = { edgeDensityPlot.data };
 
@@ -104,7 +104,7 @@ edgeLiFEPlot.data = struct;
 edgeLiFEPlot.layout = struct;
 
 edgeLiFEPlot.data.type = 'heatmap';
-edgeLiFEPlot.data.z = flipYAxis(log10(omat(:, :, 10)));
+edgeLiFEPlot.data.z = mirrorY(log10(omat(:, :, 10)));
 edgeLiFEPlot.data.colorscale = colorscale;
 edgeLiFEPlot.data = { edgeLiFEPlot.data };
 
@@ -124,13 +124,13 @@ end
 
 %% function to flip matrix data layout in the y direction
 % (since plotly and web graphics use y+ as down, y- as up)
-function flipped = flipYAxis(mat)
+function mirrored = mirrorY(mat)
 
 [h, w] = size(mat);
-flipped = zeros([h, w]);
+mirrored = zeros([h, w]);
 for x = 1 : w
     for y = 1 : h
-        flipped((h - y + 1), x) = mat(y, x);
+        mirrored((h - y + 1), x) = mat(y, x);
     end
 end
 
