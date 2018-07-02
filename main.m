@@ -57,7 +57,7 @@ close all;
 % cleaned streamline count
 figure();
 colormap('hot');
-imagesc(log10(omat(:,:,10)));
+imagesc(log10(omat(:, :, 10)));
 axis('square'); axis('equal'); axis('tight');
 title('Log_{10} LiFE');
 xlabel('FS DK Regions');
@@ -71,3 +71,67 @@ line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
 saveas(gcf, './output/edge_LiFE.png');
 close all;
 
+%% product.json generation
+
+colorscale = { { 0, '#000000'}, ...
+    { .25, '#ff0000'}, ...
+    { .5, '#ff8000'}, ...
+    { .75, '#ffff00'}, ...
+    { 1, '#ffffff'} };
+
+% edge density plot
+edgeDensityPlot = struct;
+edgeDensityPlot.data = struct;
+edgeDensityPlot.layout = struct;
+
+edgeDensityPlot.data.type = 'heatmap';
+edgeDensityPlot.data.z = flipYAxis(log10(omat(:, :, 2)));
+edgeDensityPlot.data.colorscale = colorscale;
+edgeDensityPlot.data = { edgeDensityPlot.data };
+
+edgeDensityPlot.layout.title = 'Log (base 10) Density of Streamlines';
+
+edgeDensityPlot.layout.xaxis = struct;
+edgeDensityPlot.layout.xaxis.title = 'FS DK Regions';
+
+edgeDensityPlot.layout.yaxis = struct;
+edgeDensityPlot.layout.yaxis.title = 'FS DK Regions';
+
+% LiFE EMD plot
+
+edgeLiFEPlot = struct;
+edgeLiFEPlot.data = struct;
+edgeLiFEPlot.layout = struct;
+
+edgeLiFEPlot.data.type = 'heatmap';
+edgeLiFEPlot.data.z = flipYAxis(log10(omat(:, :, 10)));
+edgeLiFEPlot.data.colorscale = colorscale;
+edgeLiFEPlot.data = { edgeLiFEPlot.data };
+
+edgeLiFEPlot.layout.title = 'Log (base 10) of LiFE EMD';
+
+edgeLiFEPlot.layout.xaxis = struct;
+edgeLiFEPlot.layout.xaxis.title = 'FS DK Regions';
+
+edgeLiFEPlot.layout.yaxis = struct;
+edgeLiFEPlot.layout.yaxis.title = 'FS DK Regions';
+
+product = { edgeDensityPlot, edgeLiFEPlot };
+
+savejson('brainlife', product, 'product.json');
+
+end
+
+%% function to flip matrix data layout in the y direction
+% (since plotly and web graphics use y+ as down, y- as up)
+function flipped = flipYAxis(mat)
+
+[h, w] = size(mat);
+flipped = zeros([h, w]);
+for x = 1 : w
+    for y = 1 : h
+        flipped((h - y + 1), x) = mat(y, x);
+    end
+end
+
+end
