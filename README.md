@@ -1,15 +1,87 @@
-[![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.0-green.svg)](https://github.com/soichih/abcd-spec)
+[![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.v1.0-blue.svg)](https://doi.org/10.25663/bl.app.1)
 
 # app-networkneuro
 
-Any preprocessing script should go to `submit.pbs`, but you can't run this locally.
+This service creates a pair of connecitity matrices from a FreeSurfer output and LiFE output. It uses the FiNE toolbox to create these results, which is distributed as part of the LiFE code. This generates and reports two matrices 
 
-`main.m` is the main matlab script. Add other matlab script here, but call them from main.m. To run `main.m` locally (for development purpose), simply run `main` in matlab.
- 
-Or to submit via PBS (like SCA-wf would do) run `./start.sh` on BigRed2
+This app takes as inputs a brainlife FreeSurfer output and a brainlife LiFE output and combines them to create a brainlife networkneuro output. The network neuro output consists of a pair of connectivity matrices generated from the Desikan-Killiany (aparc+aseg) cortical labels and the intermediary data created in MATLAB stored as .mat files. The input requirements should ensure that the FreeSurfer output and LiFE output are in alignment. The LiFE output contains the streamlines that have been evaluated with the LiFE algorithm and contains the fiber evaluation (fe) structure that has been previously estimated. The FreeSurfer output is used to create and extract the cortical labels (nodes) to group the streamlines (edges) to create a network structure for evaluation.
 
-The configuration parameter will be passed in via `config.json`. `main.m` parses this and pull input parameters.
+The primary results in the networkneuro output structure are the connectivity matrices stored in .csv file format. The itermediary data stored in the .mat files can be used by additional pipelines for further processing and are necessary for debugging. 
 
-You can write any output data to the current directory.
+2 different measures are used to create the weighted network: streamline density and virtual lesions.
 
-To clean up files, run `./clean.sh`. Please add any files output to `clean.sh` to clean it
+Streamline density is the number of streamlines between 2 regions corrected for the size of the ROIs they are connecting.
+Virtual lesions are an evaluation of the diffusion signal explained by a connection based on a forward model fit to the tractography.
+
+### Authors
+- Brent McPherson (bcmcpher@indiana.edu)
+
+### Contributors
+- Brent McPherson (bcmcpher@indiana.edu)
+
+### Funding 
+[![NSF-BCS-1734853](https://img.shields.io/badge/NSF_BCS-1734853-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1734853)
+[![NSF-BCS-1636893](https://img.shields.io/badge/NSF_BCS-1636893-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1636893)
+
+### References 
+[1. Caiafa and Pestilli. (2017) Multidimensional encoding of brain connectomes. Scientific Reports.](https://www.ncbi.nlm.nih.gov/pubmed/28904382)
+
+[2. Pestilli et al. (2014) Evaluation and statistical inference for human connectomes. Nature Methods.](https://www.ncbi.nlm.nih.gov/pubmed/25194848)
+
+## Running the App 
+
+### On Brainlife.io
+
+You can submit this App online at [https://doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47) via the "Execute" tab.
+
+### Running Locally (on your machine)
+
+1. git clone this repo.
+2. Inside the cloned directory, create `config.json` with something like the following content with paths to your input files.
+
+```json
+{
+        "freesurfer": "./input/freesurfer/output",
+	"life": "./input/life/output_fe.mat",
+}
+```
+
+3. Launch the App by executing `main`
+
+```bash
+./main
+```
+
+### Sample Datasets
+
+If you don't have your own input file, you can download sample datasets from Brainlife.io, or you can use [Brainlife CLI](https://github.com/brain-life/cli).
+
+```
+npm install -g brainlife
+bl login
+mkdir input
+bl dataset download 5a0e604116e499548135de87 && mv 5a0e604116e499548135de87 input/freesurfer/output
+bl dataset download 5a0dcb1216e499548135dd27 && mv 5a0dcb1216e499548135dd27 input/life/output_fe.mat
+```
+
+## Output
+
+The main output of this App are 2 .csv connectome files representing the density and LiFE network edge weights, respectively.
+
+The file called `pconn.mat` contains the "paired connections" output which is a cell array containing all extracted values from the upper diagonal of the network.
+
+The file called `rois.mat` contains the information stored from the ROIs during the assignment of streamlines and the creation of the different edge weights.
+
+#### Product.json
+
+The secondary output of this app is `product.json`. This file allows web interfaces, DB and API calls on the results of the processing. 
+
+### Dependencies
+
+This App only requires [singularity](https://www.sylabs.io/singularity/) to run. If you don't have singularity, you will need to install following dependencies.  
+
+  - VISTASOFT: https://github.com/vistalab/vistasoft/
+  - ENCODE: https://github.com/brain-life/encode
+  - MBA: https://github.com/francopestilli/mba
+
