@@ -57,7 +57,7 @@ close all;
 % cleaned streamline count
 figure();
 colormap('hot');
-imagesc(log10(omat(:,:,10)));
+imagesc(log10(omat(:, :, 10)));
 axis('square'); axis('equal'); axis('tight');
 title('Log_{10} LiFE');
 xlabel('FS DK Regions');
@@ -71,3 +71,73 @@ line([68.5 0.5], [68.5 0.5], 'Color', [0 0 1]);
 saveas(gcf, './output/edge_LiFE.png');
 close all;
 
+%% product.json generation
+
+colorscale = { { 0, '#000000'}, ...
+    { .25, '#ff0000'}, ...
+    { .5, '#ff8000'}, ...
+    { .75, '#ffff00'}, ...
+    { 1, '#ffffff'} };
+
+% edge density plot
+edgeDensityPlot = struct;
+edgeDensityPlot.type = 'plotly';
+edgeDensityPlot.data = struct;
+edgeDensityPlot.layout = struct;
+
+edgeDensityPlot.data.type = 'heatmap';
+edgeDensityPlot.data.z = mirrorY(log10(omat(:, :, 2)));
+edgeDensityPlot.data.colorscale = colorscale;
+edgeDensityPlot.data = { edgeDensityPlot.data };
+
+edgeDensityPlot.layout.title = 'Log (base 10) Density of Streamlines';
+edgeDensityPlot.layout.width = 500;
+edgeDensityPlot.layout.height = 500;
+
+edgeDensityPlot.layout.xaxis = struct;
+edgeDensityPlot.layout.xaxis.title = 'FS DK Regions';
+
+edgeDensityPlot.layout.yaxis = struct;
+edgeDensityPlot.layout.yaxis.title = 'FS DK Regions';
+
+% LiFE EMD plot
+
+edgeLiFEPlot = struct;
+edgeLiFEPlot.type = 'plotly';
+edgeLiFEPlot.data = struct;
+edgeLiFEPlot.layout = struct;
+
+edgeLiFEPlot.data.type = 'heatmap';
+edgeLiFEPlot.data.z = mirrorY(log10(omat(:, :, 10)));
+edgeLiFEPlot.data.colorscale = colorscale;
+edgeLiFEPlot.data = { edgeLiFEPlot.data };
+
+edgeLiFEPlot.layout.title = 'Log (base 10) of LiFE EMD';
+edgeLiFEPlot.layout.width = 500;
+edgeLiFEPlot.layout.height = 500;
+
+edgeLiFEPlot.layout.xaxis = struct;
+edgeLiFEPlot.layout.xaxis.title = 'FS DK Regions';
+
+edgeLiFEPlot.layout.yaxis = struct;
+edgeLiFEPlot.layout.yaxis.title = 'FS DK Regions';
+
+product = { edgeDensityPlot, edgeLiFEPlot };
+
+savejson('brainlife', product, 'product.json');
+
+end
+
+%% function to flip matrix data layout in the y direction
+% (since plotly and web graphics use y+ as down, y- as up)
+function mirrored = mirrorY(mat)
+
+[h, w] = size(mat);
+mirrored = zeros([h, w]);
+for x = 1 : w
+    for y = 1 : h
+        mirrored((h - y + 1), x) = mat(y, x);
+    end
+end
+
+end
