@@ -67,11 +67,24 @@ bl dataset download 5a0dcb1216e499548135dd27 && mv 5a0dcb1216e499548135dd27 inpu
 
 ## Output
 
-The main output of this App are 2 .csv connectome files representing the density and LiFE network edge weights, respectively.
+The main output of this App are 3 .csv connectome files
+- count.csv
+- density.csv
+- emd.csv
+representing the streamline count, streamline density, and LiFE network edge weights, respectively.
+
+The files `edge_density.png` and `edge_LiFE.png` are a simple visualization of the of the adjacency networks.
 
 The file called `pconn.mat` contains the "paired connections" output which is a cell array containing all extracted values from the upper diagonal of the network.
 
+The file called `omat.mat' contains all the adjacency networks build by the FiNE process. The dimension are nnodes x nnodes x olabs
+
+The file called `olab.mat` contains the labels that define the measure used in each index of `omat`.
+
 The file called `rois.mat` contains the information stored from the ROIs during the assignment of streamlines and the creation of the different edge weights.
+
+aparc+aseg_labels.nii.gz is the inflated labels used from FreeSurfer as the parcellation to assign streamlines to connections.
+
 
 #### Product.json
 
@@ -84,4 +97,5 @@ This App only requires [singularity](https://www.sylabs.io/singularity/) to run.
   - VISTASOFT: https://github.com/vistalab/vistasoft/
   - ENCODE: https://github.com/brain-life/encode
   - MBA: https://github.com/francopestilli/mba
+  - FiNE: public relsease pending submission
 
