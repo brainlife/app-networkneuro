@@ -1,9 +1,9 @@
 [![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.v1.0-blue.svg)](https://doi.org/10.25663/bl.app.1)
+[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.v1.0-blue.svg)](https://doi.org/10.25663/bl.app.47)
 
 # app-networkneuro
 
-This service creates a pair of connecitity matrices from a FreeSurfer output and LiFE output. It uses the FiNE toolbox to create these results, which is distributed as part of the LiFE code. This generates and reports two matrices 
+This service cconnecitity matrices using the FreeSurfer output and LiFE output. It uses the FiNE toolbox to create these results, which is distributed as part of the LiFE code. This generates and reports two matrices 
 
 This app takes as inputs a brainlife FreeSurfer output and a brainlife LiFE output and combines them to create a brainlife networkneuro output. The network neuro output consists of a pair of connectivity matrices generated from the Desikan-Killiany (aparc+aseg) cortical labels and the intermediary data created in MATLAB stored as .mat files. The input requirements should ensure that the FreeSurfer output and LiFE output are in alignment. The LiFE output contains the streamlines that have been evaluated with the LiFE algorithm and contains the fiber evaluation (fe) structure that has been previously estimated. The FreeSurfer output is used to create and extract the cortical labels (nodes) to group the streamlines (edges) to create a network structure for evaluation.
 
@@ -15,10 +15,13 @@ Streamline density is the number of streamlines between 2 regions corrected for 
 Virtual lesions are an evaluation of the diffusion signal explained by a connection based on a forward model fit to the tractography.
 
 ### Authors
-- Brent McPherson (bcmcpher@indiana.edu)
+- Brent McPherson (bcmcpher@iu.edu)
 
 ### Contributors
-- Brent McPherson (bcmcpher@indiana.edu)
+- Soichi Hayashi (hayashis@iu.edu)
+
+### Project director
+- Franco Pestilli (franpest@indiana.edu)
 
 ### Funding 
 [![NSF-BCS-1734853](https://img.shields.io/badge/NSF_BCS-1734853-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1734853)
@@ -28,6 +31,10 @@ Virtual lesions are an evaluation of the diffusion signal explained by a connect
 [1. Caiafa and Pestilli. (2017) Multidimensional encoding of brain connectomes. Scientific Reports.](https://www.ncbi.nlm.nih.gov/pubmed/28904382)
 
 [2. Pestilli et al. (2014) Evaluation and statistical inference for human connectomes. Nature Methods.](https://www.ncbi.nlm.nih.gov/pubmed/25194848)
+
+[3. Freesurfer Citation.](https://address)
+
+[4. Freesurfer Atlas Citation.](https://address)
 
 ## Running the App 
 
