@@ -32,9 +32,9 @@ Virtual lesions are an evaluation of the diffusion signal explained by a connect
 
 [2. Pestilli et al. (2014) Evaluation and statistical inference for human connectomes. Nature Methods.](https://www.ncbi.nlm.nih.gov/pubmed/25194848)
 
-[3. Freesurfer Citation.](https://address)
+[3. Fischl, B. (2012). FreeSurfer. Neuroimage, 62(2), 774-781.](https://www.sciencedirect.com/science/article/pii/S1053811912000389)
 
-[4. Freesurfer Atlas Citation.](https://address)
+[4. Desikan, R. S., Ségonne, F., Fischl, B., Quinn, B. T., Dickerson, B. C., Blacker, D., ... & Albert, M. S. (2006). An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest. Neuroimage, 31(3), 968-980.](https://www.sciencedirect.com/science/article/pii/S1053811906000437)
 
 ## Running the App 
 
