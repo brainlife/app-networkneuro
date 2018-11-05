@@ -3,7 +3,7 @@
 #PBS -l walltime=10:00:00
 #PBS -N networkneuro
 
-module load singularity 2> /dev/null
+set -e
 
 ## parse argument for path to file
 export fsdir=`jq -r '.fsdir' config.json`
