@@ -23,7 +23,8 @@ then
 fi
 
 #genearte vtk surfaces for each labels
-##mri_label2vol --seg $fs/mri/aparc+aseg.mgz --temp $fs/mri/aparc+aseg.mgz --regheader $fs/mri/aparc+aseg.mgz --o aparc+aseg.nii.gz
-#time singularity exec -e docker://brainlife/docker-pythonvtk ./freesurfer2vtks.py 
+time singularity exec -e docker://brainlife/docker-pythonvtk ./freesurfer2vtks.py 
+
+#vtk should have decimate method that I can use in freesurfer2vtk 
 #time singularity exec --writable -e docker://brainlife/freesurfer:6.0.0 bash -c "echo $FREESURFER_LICENSE > /usr/local/freesurfer/license.txt && ./decimate_surface.sh"
 
