@@ -1,4 +1,4 @@
-{"labels": [
+[
     {
         "label": "0",
         "name": "Unknown",
@@ -10,7 +10,7 @@
     },
     {
         "label": "1",
-        "name": "C-Exterior",
+        "name": "Left-Cerebral-Exterior",
         "color": {
             "r": 70,
             "g": 130,
@@ -28,7 +28,7 @@
     },
     {
         "label": "3",
-        "name": "C-Cortex",
+        "name": "Left-Cerebral-Cortex",
         "color": {
             "r": 205,
             "g": 62,
@@ -37,7 +37,7 @@
     },
     {
         "label": "4",
-        "name": "L-Ventricle",
+        "name": "Left-Lateral-Ventricle",
         "color": {
             "r": 120,
             "g": 18,
@@ -55,7 +55,7 @@
     },
     {
         "label": "6",
-        "name": "C-Exterior",
+        "name": "Left-Cerebellum-Exterior",
         "color": {
             "r": 0,
             "g": 148,
@@ -73,7 +73,7 @@
     },
     {
         "label": "8",
-        "name": "C-Cortex",
+        "name": "Left-Cerebellum-Cortex",
         "color": {
             "r": 230,
             "g": 148,
@@ -91,7 +91,7 @@
     },
     {
         "label": "10",
-        "name": "T-Proper",
+        "name": "Left-Thalamus-Proper",
         "color": {
             "r": 0,
             "g": 118,
@@ -235,7 +235,7 @@
     },
     {
         "label": "26",
-        "name": "A-area",
+        "name": "Left-Accumbens-area",
         "color": {
             "r": 255,
             "g": 165,
@@ -244,7 +244,7 @@
     },
     {
         "label": "27",
-        "name": "S-Nigra",
+        "name": "Left-Substancia-Nigra",
         "color": {
             "r": 0,
             "g": 255,
@@ -280,7 +280,7 @@
     },
     {
         "label": "31",
-        "name": "c-plexus",
+        "name": "Left-choroid-plexus",
         "color": {
             "r": 0,
             "g": 200,
@@ -361,7 +361,7 @@
     },
     {
         "label": "40",
-        "name": "C-Exterior",
+        "name": "Right-Cerebral-Exterior",
         "color": {
             "r": 70,
             "g": 130,
@@ -379,7 +379,7 @@
     },
     {
         "label": "42",
-        "name": "C-Cortex",
+        "name": "Right-Cerebral-Cortex",
         "color": {
             "r": 205,
             "g": 62,
@@ -388,7 +388,7 @@
     },
     {
         "label": "43",
-        "name": "L-Ventricle",
+        "name": "Right-Lateral-Ventricle",
         "color": {
             "r": 120,
             "g": 18,
@@ -406,7 +406,7 @@
     },
     {
         "label": "45",
-        "name": "C-Exterior",
+        "name": "Right-Cerebellum-Exterior",
         "color": {
             "r": 0,
             "g": 148,
@@ -424,7 +424,7 @@
     },
     {
         "label": "47",
-        "name": "C-Cortex",
+        "name": "Right-Cerebellum-Cortex",
         "color": {
             "r": 230,
             "g": 148,
@@ -442,7 +442,7 @@
     },
     {
         "label": "49",
-        "name": "T-Proper",
+        "name": "Right-Thalamus-Proper",
         "color": {
             "r": 0,
             "g": 118,
@@ -523,7 +523,7 @@
     },
     {
         "label": "58",
-        "name": "A-area",
+        "name": "Right-Accumbens-area",
         "color": {
             "r": 255,
             "g": 165,
@@ -532,7 +532,7 @@
     },
     {
         "label": "59",
-        "name": "S-Nigra",
+        "name": "Right-Substancia-Nigra",
         "color": {
             "r": 0,
             "g": 255,
@@ -568,7 +568,7 @@
     },
     {
         "label": "63",
-        "name": "c-plexus",
+        "name": "Right-choroid-plexus",
         "color": {
             "r": 0,
             "g": 200,
@@ -685,7 +685,7 @@
     },
     {
         "label": "78",
-        "name": "W-hypointensities",
+        "name": "Left-WM-hypointensities",
         "color": {
             "r": 255,
             "g": 148,
@@ -694,7 +694,7 @@
     },
     {
         "label": "79",
-        "name": "W-hypointensities",
+        "name": "Right-WM-hypointensities",
         "color": {
             "r": 255,
             "g": 148,
@@ -703,7 +703,7 @@
     },
     {
         "label": "80",
-        "name": "W-hypointensities",
+        "name": "non-WM-hypointensities",
         "color": {
             "r": 164,
             "g": 108,
@@ -793,7 +793,7 @@
     },
     {
         "label": "96",
-        "name": "A-Anterior",
+        "name": "Left-Amygdala-Anterior",
         "color": {
             "r": 205,
             "g": 10,
@@ -802,7 +802,7 @@
     },
     {
         "label": "97",
-        "name": "A-Anterior",
+        "name": "Right-Amygdala-Anterior",
         "color": {
             "r": 205,
             "g": 10,
@@ -1000,7 +1000,7 @@
     },
     {
         "label": "120",
-        "name": "F-Muscle",
+        "name": "SC-Fat-Muscle",
         "color": {
             "r": 238,
             "g": 238,
@@ -1144,7 +1144,7 @@
     },
     {
         "label": "136",
-        "name": "C-Putamen",
+        "name": "Left-Caudate-Putamen",
         "color": {
             "r": 21,
             "g": 39,
@@ -1153,7 +1153,7 @@
     },
     {
         "label": "137",
-        "name": "C-Putamen",
+        "name": "Right-Caudate-Putamen",
         "color": {
             "r": 21,
             "g": 39,
@@ -1261,7 +1261,7 @@
     },
     {
         "label": "150",
-        "name": "C-S",
+        "name": "R-C-S",
         "color": {
             "r": 255,
             "g": 0,
@@ -1279,7 +1279,7 @@
     },
     {
         "label": "152",
-        "name": "A-Muscle",
+        "name": "SC-Adipose-Muscle",
         "color": {
             "r": 238,
             "g": 238,
@@ -1306,7 +1306,7 @@
     },
     {
         "label": "155",
-        "name": "I-Ant",
+        "name": "Left-IntCapsule-Ant",
         "color": {
             "r": 238,
             "g": 59,
@@ -1315,7 +1315,7 @@
     },
     {
         "label": "156",
-        "name": "I-Ant",
+        "name": "Right-IntCapsule-Ant",
         "color": {
             "r": 238,
             "g": 59,
@@ -1324,7 +1324,7 @@
     },
     {
         "label": "157",
-        "name": "I-Pos",
+        "name": "Left-IntCapsule-Pos",
         "color": {
             "r": 62,
             "g": 10,
@@ -1333,7 +1333,7 @@
     },
     {
         "label": "158",
-        "name": "I-Pos",
+        "name": "Right-IntCapsule-Pos",
         "color": {
             "r": 62,
             "g": 10,
@@ -1432,7 +1432,7 @@
     },
     {
         "label": "169",
-        "name": "B-Ganglia",
+        "name": "Left-Basal-Ganglia",
         "color": {
             "r": 236,
             "g": 13,
@@ -1441,7 +1441,7 @@
     },
     {
         "label": "176",
-        "name": "B-Ganglia",
+        "name": "Right-Basal-Ganglia",
         "color": {
             "r": 236,
             "g": 13,
@@ -1504,7 +1504,7 @@
     },
     {
         "label": "177",
-        "name": "W-Matter",
+        "name": "Vermis-White-Matter",
         "color": {
             "r": 119,
             "g": 50,
@@ -1531,7 +1531,7 @@
     },
     {
         "label": "180",
-        "name": "C-Dysplasia",
+        "name": "Left-Cortical-Dysplasia",
         "color": {
             "r": 73,
             "g": 61,
@@ -1540,7 +1540,7 @@
     },
     {
         "label": "181",
-        "name": "C-Dysplasia",
+        "name": "Right-Cortical-Dysplasia",
         "color": {
             "r": 73,
             "g": 62,
@@ -1567,7 +1567,7 @@
     },
     {
         "label": "194",
-        "name": "C-head",
+        "name": "Left-CADG-head",
         "color": {
             "r": 255,
             "g": 164,
@@ -1603,7 +1603,7 @@
     },
     {
         "label": "198",
-        "name": "C-head",
+        "name": "Right-CADG-head",
         "color": {
             "r": 0,
             "g": 126,
@@ -2008,7 +2008,7 @@
     },
     {
         "label": "332",
-        "name": "C-IliacA",
+        "name": "Left-Common-IliacA",
         "color": {
             "r": 255,
             "g": 80,
@@ -2017,7 +2017,7 @@
     },
     {
         "label": "333",
-        "name": "C-IliacA",
+        "name": "Right-Common-IliacA",
         "color": {
             "r": 255,
             "g": 160,
@@ -2026,7 +2026,7 @@
     },
     {
         "label": "334",
-        "name": "E-IliacA",
+        "name": "Left-External-IliacA",
         "color": {
             "r": 255,
             "g": 255,
@@ -2035,7 +2035,7 @@
     },
     {
         "label": "335",
-        "name": "E-IliacA",
+        "name": "Right-External-IliacA",
         "color": {
             "r": 0,
             "g": 255,
@@ -2044,7 +2044,7 @@
     },
     {
         "label": "336",
-        "name": "I-IliacA",
+        "name": "Left-Internal-IliacA",
         "color": {
             "r": 255,
             "g": 0,
@@ -2053,7 +2053,7 @@
     },
     {
         "label": "337",
-        "name": "I-IliacA",
+        "name": "Right-Internal-IliacA",
         "color": {
             "r": 255,
             "g": 0,
@@ -2062,7 +2062,7 @@
     },
     {
         "label": "338",
-        "name": "L-SacralA",
+        "name": "Left-Lateral-SacralA",
         "color": {
             "r": 255,
             "g": 50,
@@ -2071,7 +2071,7 @@
     },
     {
         "label": "339",
-        "name": "L-SacralA",
+        "name": "Right-Lateral-SacralA",
         "color": {
             "r": 80,
             "g": 255,
@@ -2098,7 +2098,7 @@
     },
     {
         "label": "342",
-        "name": "I-PudendalA",
+        "name": "Left-Internal-PudendalA",
         "color": {
             "r": 0,
             "g": 255,
@@ -2107,7 +2107,7 @@
     },
     {
         "label": "343",
-        "name": "I-PudendalA",
+        "name": "Right-Internal-PudendalA",
         "color": {
             "r": 0,
             "g": 0,
@@ -2134,7 +2134,7 @@
     },
     {
         "label": "346",
-        "name": "I-RectalA",
+        "name": "Left-Inf-RectalA",
         "color": {
             "r": 255,
             "g": 210,
@@ -2143,7 +2143,7 @@
     },
     {
         "label": "347",
-        "name": "I-RectalA",
+        "name": "Right-Inf-RectalA",
         "color": {
             "r": 0,
             "g": 160,
@@ -2152,7 +2152,7 @@
     },
     {
         "label": "348",
-        "name": "C-IliacV",
+        "name": "Left-Common-IliacV",
         "color": {
             "r": 255,
             "g": 200,
@@ -2161,7 +2161,7 @@
     },
     {
         "label": "349",
-        "name": "C-IliacV",
+        "name": "Right-Common-IliacV",
         "color": {
             "r": 255,
             "g": 200,
@@ -2170,7 +2170,7 @@
     },
     {
         "label": "350",
-        "name": "E-IliacV",
+        "name": "Left-External-IliacV",
         "color": {
             "r": 255,
             "g": 80,
@@ -2179,7 +2179,7 @@
     },
     {
         "label": "351",
-        "name": "E-IliacV",
+        "name": "Right-External-IliacV",
         "color": {
             "r": 255,
             "g": 160,
@@ -2188,7 +2188,7 @@
     },
     {
         "label": "352",
-        "name": "I-IliacV",
+        "name": "Left-Internal-IliacV",
         "color": {
             "r": 30,
             "g": 255,
@@ -2197,7 +2197,7 @@
     },
     {
         "label": "353",
-        "name": "I-IliacV",
+        "name": "Right-Internal-IliacV",
         "color": {
             "r": 80,
             "g": 200,
@@ -2224,7 +2224,7 @@
     },
     {
         "label": "356",
-        "name": "I-PudendalV",
+        "name": "Left-Internal-PudendalV",
         "color": {
             "r": 120,
             "g": 200,
@@ -2233,7 +2233,7 @@
     },
     {
         "label": "357",
-        "name": "I-PudendalV",
+        "name": "Right-Internal-PudendalV",
         "color": {
             "r": 170,
             "g": 10,
@@ -3439,7 +3439,7 @@
     },
     {
         "label": "701",
-        "name": "F-FAST",
+        "name": "CSF-FSL-FAST",
         "color": {
             "r": 120,
             "g": 18,
@@ -3448,7 +3448,7 @@
     },
     {
         "label": "702",
-        "name": "F-FAST",
+        "name": "GrayMatter-FSL-FAST",
         "color": {
             "r": 205,
             "g": 62,
@@ -3457,7 +3457,7 @@
     },
     {
         "label": "703",
-        "name": "F-FAST",
+        "name": "WhiteMatter-FSL-FAST",
         "color": {
             "r": 0,
             "g": 225,
@@ -3475,7 +3475,7 @@
     },
     {
         "label": "1000",
-        "name": "l-unknown",
+        "name": "ctx-lh-unknown",
         "color": {
             "r": 25,
             "g": 5,
@@ -3484,7 +3484,7 @@
     },
     {
         "label": "1001",
-        "name": "l-bankssts",
+        "name": "ctx-lh-bankssts",
         "color": {
             "r": 25,
             "g": 100,
@@ -3493,7 +3493,7 @@
     },
     {
         "label": "1002",
-        "name": "l-caudalanteriorcingulate",
+        "name": "ctx-lh-caudalanteriorcingulate",
         "color": {
             "r": 125,
             "g": 100,
@@ -3502,7 +3502,7 @@
     },
     {
         "label": "1003",
-        "name": "l-caudalmiddlefrontal",
+        "name": "ctx-lh-caudalmiddlefrontal",
         "color": {
             "r": 100,
             "g": 25,
@@ -3511,7 +3511,7 @@
     },
     {
         "label": "1004",
-        "name": "l-corpuscallosum",
+        "name": "ctx-lh-corpuscallosum",
         "color": {
             "r": 120,
             "g": 70,
@@ -3520,7 +3520,7 @@
     },
     {
         "label": "1005",
-        "name": "l-cuneus",
+        "name": "ctx-lh-cuneus",
         "color": {
             "r": 220,
             "g": 20,
@@ -3529,7 +3529,7 @@
     },
     {
         "label": "1006",
-        "name": "l-entorhinal",
+        "name": "ctx-lh-entorhinal",
         "color": {
             "r": 220,
             "g": 20,
@@ -3538,7 +3538,7 @@
     },
     {
         "label": "1007",
-        "name": "l-fusiform",
+        "name": "ctx-lh-fusiform",
         "color": {
             "r": 180,
             "g": 220,
@@ -3547,7 +3547,7 @@
     },
     {
         "label": "1008",
-        "name": "l-inferiorparietal",
+        "name": "ctx-lh-inferiorparietal",
         "color": {
             "r": 220,
             "g": 60,
@@ -3556,7 +3556,7 @@
     },
     {
         "label": "1009",
-        "name": "l-inferiortemporal",
+        "name": "ctx-lh-inferiortemporal",
         "color": {
             "r": 180,
             "g": 40,
@@ -3565,7 +3565,7 @@
     },
     {
         "label": "1010",
-        "name": "l-isthmuscingulate",
+        "name": "ctx-lh-isthmuscingulate",
         "color": {
             "r": 140,
             "g": 20,
@@ -3574,7 +3574,7 @@
     },
     {
         "label": "1011",
-        "name": "l-lateraloccipital",
+        "name": "ctx-lh-lateraloccipital",
         "color": {
             "r": 20,
             "g": 30,
@@ -3583,7 +3583,7 @@
     },
     {
         "label": "1012",
-        "name": "l-lateralorbitofrontal",
+        "name": "ctx-lh-lateralorbitofrontal",
         "color": {
             "r": 35,
             "g": 75,
@@ -3592,7 +3592,7 @@
     },
     {
         "label": "1013",
-        "name": "l-lingual",
+        "name": "ctx-lh-lingual",
         "color": {
             "r": 225,
             "g": 140,
@@ -3601,7 +3601,7 @@
     },
     {
         "label": "1014",
-        "name": "l-medialorbitofrontal",
+        "name": "ctx-lh-medialorbitofrontal",
         "color": {
             "r": 200,
             "g": 35,
@@ -3610,7 +3610,7 @@
     },
     {
         "label": "1015",
-        "name": "l-middletemporal",
+        "name": "ctx-lh-middletemporal",
         "color": {
             "r": 160,
             "g": 100,
@@ -3619,7 +3619,7 @@
     },
     {
         "label": "1016",
-        "name": "l-parahippocampal",
+        "name": "ctx-lh-parahippocampal",
         "color": {
             "r": 20,
             "g": 220,
@@ -3628,7 +3628,7 @@
     },
     {
         "label": "1017",
-        "name": "l-paracentral",
+        "name": "ctx-lh-paracentral",
         "color": {
             "r": 60,
             "g": 220,
@@ -3637,7 +3637,7 @@
     },
     {
         "label": "1018",
-        "name": "l-parsopercularis",
+        "name": "ctx-lh-parsopercularis",
         "color": {
             "r": 220,
             "g": 180,
@@ -3646,7 +3646,7 @@
     },
     {
         "label": "1019",
-        "name": "l-parsorbitalis",
+        "name": "ctx-lh-parsorbitalis",
         "color": {
             "r": 20,
             "g": 100,
@@ -3655,7 +3655,7 @@
     },
     {
         "label": "1020",
-        "name": "l-parstriangularis",
+        "name": "ctx-lh-parstriangularis",
         "color": {
             "r": 220,
             "g": 60,
@@ -3664,7 +3664,7 @@
     },
     {
         "label": "1021",
-        "name": "l-pericalcarine",
+        "name": "ctx-lh-pericalcarine",
         "color": {
             "r": 120,
             "g": 100,
@@ -3673,7 +3673,7 @@
     },
     {
         "label": "1022",
-        "name": "l-postcentral",
+        "name": "ctx-lh-postcentral",
         "color": {
             "r": 220,
             "g": 20,
@@ -3682,7 +3682,7 @@
     },
     {
         "label": "1023",
-        "name": "l-posteriorcingulate",
+        "name": "ctx-lh-posteriorcingulate",
         "color": {
             "r": 220,
             "g": 180,
@@ -3691,7 +3691,7 @@
     },
     {
         "label": "1024",
-        "name": "l-precentral",
+        "name": "ctx-lh-precentral",
         "color": {
             "r": 60,
             "g": 20,
@@ -3700,7 +3700,7 @@
     },
     {
         "label": "1025",
-        "name": "l-precuneus",
+        "name": "ctx-lh-precuneus",
         "color": {
             "r": 160,
             "g": 140,
@@ -3709,7 +3709,7 @@
     },
     {
         "label": "1026",
-        "name": "l-rostralanteriorcingulate",
+        "name": "ctx-lh-rostralanteriorcingulate",
         "color": {
             "r": 80,
             "g": 20,
@@ -3718,7 +3718,7 @@
     },
     {
         "label": "1027",
-        "name": "l-rostralmiddlefrontal",
+        "name": "ctx-lh-rostralmiddlefrontal",
         "color": {
             "r": 75,
             "g": 50,
@@ -3727,7 +3727,7 @@
     },
     {
         "label": "1028",
-        "name": "l-superiorfrontal",
+        "name": "ctx-lh-superiorfrontal",
         "color": {
             "r": 20,
             "g": 220,
@@ -3736,7 +3736,7 @@
     },
     {
         "label": "1029",
-        "name": "l-superiorparietal",
+        "name": "ctx-lh-superiorparietal",
         "color": {
             "r": 20,
             "g": 180,
@@ -3745,7 +3745,7 @@
     },
     {
         "label": "1030",
-        "name": "l-superiortemporal",
+        "name": "ctx-lh-superiortemporal",
         "color": {
             "r": 140,
             "g": 220,
@@ -3754,7 +3754,7 @@
     },
     {
         "label": "1031",
-        "name": "l-supramarginal",
+        "name": "ctx-lh-supramarginal",
         "color": {
             "r": 80,
             "g": 160,
@@ -3763,7 +3763,7 @@
     },
     {
         "label": "1032",
-        "name": "l-frontalpole",
+        "name": "ctx-lh-frontalpole",
         "color": {
             "r": 100,
             "g": 0,
@@ -3772,7 +3772,7 @@
     },
     {
         "label": "1033",
-        "name": "l-temporalpole",
+        "name": "ctx-lh-temporalpole",
         "color": {
             "r": 70,
             "g": 70,
@@ -3781,7 +3781,7 @@
     },
     {
         "label": "1034",
-        "name": "l-transversetemporal",
+        "name": "ctx-lh-transversetemporal",
         "color": {
             "r": 150,
             "g": 150,
@@ -3790,7 +3790,7 @@
     },
     {
         "label": "1035",
-        "name": "l-insula",
+        "name": "ctx-lh-insula",
         "color": {
             "r": 255,
             "g": 192,
@@ -3799,7 +3799,7 @@
     },
     {
         "label": "2000",
-        "name": "r-unknown",
+        "name": "ctx-rh-unknown",
         "color": {
             "r": 25,
             "g": 5,
@@ -3808,7 +3808,7 @@
     },
     {
         "label": "2001",
-        "name": "r-bankssts",
+        "name": "ctx-rh-bankssts",
         "color": {
             "r": 25,
             "g": 100,
@@ -3817,7 +3817,7 @@
     },
     {
         "label": "2002",
-        "name": "r-caudalanteriorcingulate",
+        "name": "ctx-rh-caudalanteriorcingulate",
         "color": {
             "r": 125,
             "g": 100,
@@ -3826,7 +3826,7 @@
     },
     {
         "label": "2003",
-        "name": "r-caudalmiddlefrontal",
+        "name": "ctx-rh-caudalmiddlefrontal",
         "color": {
             "r": 100,
             "g": 25,
@@ -3835,7 +3835,7 @@
     },
     {
         "label": "2004",
-        "name": "r-corpuscallosum",
+        "name": "ctx-rh-corpuscallosum",
         "color": {
             "r": 120,
             "g": 70,
@@ -3844,7 +3844,7 @@
     },
     {
         "label": "2005",
-        "name": "r-cuneus",
+        "name": "ctx-rh-cuneus",
         "color": {
             "r": 220,
             "g": 20,
@@ -3853,7 +3853,7 @@
     },
     {
         "label": "2006",
-        "name": "r-entorhinal",
+        "name": "ctx-rh-entorhinal",
         "color": {
             "r": 220,
             "g": 20,
@@ -3862,7 +3862,7 @@
     },
     {
         "label": "2007",
-        "name": "r-fusiform",
+        "name": "ctx-rh-fusiform",
         "color": {
             "r": 180,
             "g": 220,
@@ -3871,7 +3871,7 @@
     },
     {
         "label": "2008",
-        "name": "r-inferiorparietal",
+        "name": "ctx-rh-inferiorparietal",
         "color": {
             "r": 220,
             "g": 60,
@@ -3880,7 +3880,7 @@
     },
     {
         "label": "2009",
-        "name": "r-inferiortemporal",
+        "name": "ctx-rh-inferiortemporal",
         "color": {
             "r": 180,
             "g": 40,
@@ -3889,7 +3889,7 @@
     },
     {
         "label": "2010",
-        "name": "r-isthmuscingulate",
+        "name": "ctx-rh-isthmuscingulate",
         "color": {
             "r": 140,
             "g": 20,
@@ -3898,7 +3898,7 @@
     },
     {
         "label": "2011",
-        "name": "r-lateraloccipital",
+        "name": "ctx-rh-lateraloccipital",
         "color": {
             "r": 20,
             "g": 30,
@@ -3907,7 +3907,7 @@
     },
     {
         "label": "2012",
-        "name": "r-lateralorbitofrontal",
+        "name": "ctx-rh-lateralorbitofrontal",
         "color": {
             "r": 35,
             "g": 75,
@@ -3916,7 +3916,7 @@
     },
     {
         "label": "2013",
-        "name": "r-lingual",
+        "name": "ctx-rh-lingual",
         "color": {
             "r": 225,
             "g": 140,
@@ -3925,7 +3925,7 @@
     },
     {
         "label": "2014",
-        "name": "r-medialorbitofrontal",
+        "name": "ctx-rh-medialorbitofrontal",
         "color": {
             "r": 200,
             "g": 35,
@@ -3934,7 +3934,7 @@
     },
     {
         "label": "2015",
-        "name": "r-middletemporal",
+        "name": "ctx-rh-middletemporal",
         "color": {
             "r": 160,
             "g": 100,
@@ -3943,7 +3943,7 @@
     },
     {
         "label": "2016",
-        "name": "r-parahippocampal",
+        "name": "ctx-rh-parahippocampal",
         "color": {
             "r": 20,
             "g": 220,
@@ -3952,7 +3952,7 @@
     },
     {
         "label": "2017",
-        "name": "r-paracentral",
+        "name": "ctx-rh-paracentral",
         "color": {
             "r": 60,
             "g": 220,
@@ -3961,7 +3961,7 @@
     },
     {
         "label": "2018",
-        "name": "r-parsopercularis",
+        "name": "ctx-rh-parsopercularis",
         "color": {
             "r": 220,
             "g": 180,
@@ -3970,7 +3970,7 @@
     },
     {
         "label": "2019",
-        "name": "r-parsorbitalis",
+        "name": "ctx-rh-parsorbitalis",
         "color": {
             "r": 20,
             "g": 100,
@@ -3979,7 +3979,7 @@
     },
     {
         "label": "2020",
-        "name": "r-parstriangularis",
+        "name": "ctx-rh-parstriangularis",
         "color": {
             "r": 220,
             "g": 60,
@@ -3988,7 +3988,7 @@
     },
     {
         "label": "2021",
-        "name": "r-pericalcarine",
+        "name": "ctx-rh-pericalcarine",
         "color": {
             "r": 120,
             "g": 100,
@@ -3997,7 +3997,7 @@
     },
     {
         "label": "2022",
-        "name": "r-postcentral",
+        "name": "ctx-rh-postcentral",
         "color": {
             "r": 220,
             "g": 20,
@@ -4006,7 +4006,7 @@
     },
     {
         "label": "2023",
-        "name": "r-posteriorcingulate",
+        "name": "ctx-rh-posteriorcingulate",
         "color": {
             "r": 220,
             "g": 180,
@@ -4015,7 +4015,7 @@
     },
     {
         "label": "2024",
-        "name": "r-precentral",
+        "name": "ctx-rh-precentral",
         "color": {
             "r": 60,
             "g": 20,
@@ -4024,7 +4024,7 @@
     },
     {
         "label": "2025",
-        "name": "r-precuneus",
+        "name": "ctx-rh-precuneus",
         "color": {
             "r": 160,
             "g": 140,
@@ -4033,7 +4033,7 @@
     },
     {
         "label": "2026",
-        "name": "r-rostralanteriorcingulate",
+        "name": "ctx-rh-rostralanteriorcingulate",
         "color": {
             "r": 80,
             "g": 20,
@@ -4042,7 +4042,7 @@
     },
     {
         "label": "2027",
-        "name": "r-rostralmiddlefrontal",
+        "name": "ctx-rh-rostralmiddlefrontal",
         "color": {
             "r": 75,
             "g": 50,
@@ -4051,7 +4051,7 @@
     },
     {
         "label": "2028",
-        "name": "r-superiorfrontal",
+        "name": "ctx-rh-superiorfrontal",
         "color": {
             "r": 20,
             "g": 220,
@@ -4060,7 +4060,7 @@
     },
     {
         "label": "2029",
-        "name": "r-superiorparietal",
+        "name": "ctx-rh-superiorparietal",
         "color": {
             "r": 20,
             "g": 180,
@@ -4069,7 +4069,7 @@
     },
     {
         "label": "2030",
-        "name": "r-superiortemporal",
+        "name": "ctx-rh-superiortemporal",
         "color": {
             "r": 140,
             "g": 220,
@@ -4078,7 +4078,7 @@
     },
     {
         "label": "2031",
-        "name": "r-supramarginal",
+        "name": "ctx-rh-supramarginal",
         "color": {
             "r": 80,
             "g": 160,
@@ -4087,7 +4087,7 @@
     },
     {
         "label": "2032",
-        "name": "r-frontalpole",
+        "name": "ctx-rh-frontalpole",
         "color": {
             "r": 100,
             "g": 0,
@@ -4096,7 +4096,7 @@
     },
     {
         "label": "2033",
-        "name": "r-temporalpole",
+        "name": "ctx-rh-temporalpole",
         "color": {
             "r": 70,
             "g": 70,
@@ -4105,7 +4105,7 @@
     },
     {
         "label": "2034",
-        "name": "r-transversetemporal",
+        "name": "ctx-rh-transversetemporal",
         "color": {
             "r": 150,
             "g": 150,
@@ -4114,7 +4114,7 @@
     },
     {
         "label": "2035",
-        "name": "r-insula",
+        "name": "ctx-rh-insula",
         "color": {
             "r": 255,
             "g": 192,
@@ -4123,7 +4123,7 @@
     },
     {
         "label": "3000",
-        "name": "l-unknown",
+        "name": "wm-lh-unknown",
         "color": {
             "r": 230,
             "g": 250,
@@ -4132,7 +4132,7 @@
     },
     {
         "label": "3001",
-        "name": "l-bankssts",
+        "name": "wm-lh-bankssts",
         "color": {
             "r": 230,
             "g": 155,
@@ -4141,7 +4141,7 @@
     },
     {
         "label": "3002",
-        "name": "l-caudalanteriorcingulate",
+        "name": "wm-lh-caudalanteriorcingulate",
         "color": {
             "r": 130,
             "g": 155,
@@ -4150,7 +4150,7 @@
     },
     {
         "label": "3003",
-        "name": "l-caudalmiddlefrontal",
+        "name": "wm-lh-caudalmiddlefrontal",
         "color": {
             "r": 155,
             "g": 230,
@@ -4159,7 +4159,7 @@
     },
     {
         "label": "3004",
-        "name": "l-corpuscallosum",
+        "name": "wm-lh-corpuscallosum",
         "color": {
             "r": 135,
             "g": 185,
@@ -4168,7 +4168,7 @@
     },
     {
         "label": "3005",
-        "name": "l-cuneus",
+        "name": "wm-lh-cuneus",
         "color": {
             "r": 35,
             "g": 235,
@@ -4177,7 +4177,7 @@
     },
     {
         "label": "3006",
-        "name": "l-entorhinal",
+        "name": "wm-lh-entorhinal",
         "color": {
             "r": 35,
             "g": 235,
@@ -4186,7 +4186,7 @@
     },
     {
         "label": "3007",
-        "name": "l-fusiform",
+        "name": "wm-lh-fusiform",
         "color": {
             "r": 75,
             "g": 35,
@@ -4195,7 +4195,7 @@
     },
     {
         "label": "3008",
-        "name": "l-inferiorparietal",
+        "name": "wm-lh-inferiorparietal",
         "color": {
             "r": 35,
             "g": 195,
@@ -4204,7 +4204,7 @@
     },
     {
         "label": "3009",
-        "name": "l-inferiortemporal",
+        "name": "wm-lh-inferiortemporal",
         "color": {
             "r": 75,
             "g": 215,
@@ -4213,7 +4213,7 @@
     },
     {
         "label": "3010",
-        "name": "l-isthmuscingulate",
+        "name": "wm-lh-isthmuscingulate",
         "color": {
             "r": 115,
             "g": 235,
@@ -4222,7 +4222,7 @@
     },
     {
         "label": "3011",
-        "name": "l-lateraloccipital",
+        "name": "wm-lh-lateraloccipital",
         "color": {
             "r": 235,
             "g": 225,
@@ -4231,7 +4231,7 @@
     },
     {
         "label": "3012",
-        "name": "l-lateralorbitofrontal",
+        "name": "wm-lh-lateralorbitofrontal",
         "color": {
             "r": 220,
             "g": 180,
@@ -4240,7 +4240,7 @@
     },
     {
         "label": "3013",
-        "name": "l-lingual",
+        "name": "wm-lh-lingual",
         "color": {
             "r": 30,
             "g": 115,
@@ -4249,7 +4249,7 @@
     },
     {
         "label": "3014",
-        "name": "l-medialorbitofrontal",
+        "name": "wm-lh-medialorbitofrontal",
         "color": {
             "r": 55,
             "g": 220,
@@ -4258,7 +4258,7 @@
     },
     {
         "label": "3015",
-        "name": "l-middletemporal",
+        "name": "wm-lh-middletemporal",
         "color": {
             "r": 95,
             "g": 155,
@@ -4267,7 +4267,7 @@
     },
     {
         "label": "3016",
-        "name": "l-parahippocampal",
+        "name": "wm-lh-parahippocampal",
         "color": {
             "r": 235,
             "g": 35,
@@ -4276,7 +4276,7 @@
     },
     {
         "label": "3017",
-        "name": "l-paracentral",
+        "name": "wm-lh-paracentral",
         "color": {
             "r": 195,
             "g": 35,
@@ -4285,7 +4285,7 @@
     },
     {
         "label": "3018",
-        "name": "l-parsopercularis",
+        "name": "wm-lh-parsopercularis",
         "color": {
             "r": 35,
             "g": 75,
@@ -4294,7 +4294,7 @@
     },
     {
         "label": "3019",
-        "name": "l-parsorbitalis",
+        "name": "wm-lh-parsorbitalis",
         "color": {
             "r": 235,
             "g": 155,
@@ -4303,7 +4303,7 @@
     },
     {
         "label": "3020",
-        "name": "l-parstriangularis",
+        "name": "wm-lh-parstriangularis",
         "color": {
             "r": 35,
             "g": 195,
@@ -4312,7 +4312,7 @@
     },
     {
         "label": "3021",
-        "name": "l-pericalcarine",
+        "name": "wm-lh-pericalcarine",
         "color": {
             "r": 135,
             "g": 155,
@@ -4321,7 +4321,7 @@
     },
     {
         "label": "3022",
-        "name": "l-postcentral",
+        "name": "wm-lh-postcentral",
         "color": {
             "r": 35,
             "g": 235,
@@ -4330,7 +4330,7 @@
     },
     {
         "label": "3023",
-        "name": "l-posteriorcingulate",
+        "name": "wm-lh-posteriorcingulate",
         "color": {
             "r": 35,
             "g": 75,
@@ -4339,7 +4339,7 @@
     },
     {
         "label": "3024",
-        "name": "l-precentral",
+        "name": "wm-lh-precentral",
         "color": {
             "r": 195,
             "g": 235,
@@ -4348,7 +4348,7 @@
     },
     {
         "label": "3025",
-        "name": "l-precuneus",
+        "name": "wm-lh-precuneus",
         "color": {
             "r": 95,
             "g": 115,
@@ -4357,7 +4357,7 @@
     },
     {
         "label": "3026",
-        "name": "l-rostralanteriorcingulate",
+        "name": "wm-lh-rostralanteriorcingulate",
         "color": {
             "r": 175,
             "g": 235,
@@ -4366,7 +4366,7 @@
     },
     {
         "label": "3027",
-        "name": "l-rostralmiddlefrontal",
+        "name": "wm-lh-rostralmiddlefrontal",
         "color": {
             "r": 180,
             "g": 205,
@@ -4375,7 +4375,7 @@
     },
     {
         "label": "3028",
-        "name": "l-superiorfrontal",
+        "name": "wm-lh-superiorfrontal",
         "color": {
             "r": 235,
             "g": 35,
@@ -4384,7 +4384,7 @@
     },
     {
         "label": "3029",
-        "name": "l-superiorparietal",
+        "name": "wm-lh-superiorparietal",
         "color": {
             "r": 235,
             "g": 75,
@@ -4393,7 +4393,7 @@
     },
     {
         "label": "3030",
-        "name": "l-superiortemporal",
+        "name": "wm-lh-superiortemporal",
         "color": {
             "r": 115,
             "g": 35,
@@ -4402,7 +4402,7 @@
     },
     {
         "label": "3031",
-        "name": "l-supramarginal",
+        "name": "wm-lh-supramarginal",
         "color": {
             "r": 175,
             "g": 95,
@@ -4411,7 +4411,7 @@
     },
     {
         "label": "3032",
-        "name": "l-frontalpole",
+        "name": "wm-lh-frontalpole",
         "color": {
             "r": 155,
             "g": 255,
@@ -4420,7 +4420,7 @@
     },
     {
         "label": "3033",
-        "name": "l-temporalpole",
+        "name": "wm-lh-temporalpole",
         "color": {
             "r": 185,
             "g": 185,
@@ -4429,7 +4429,7 @@
     },
     {
         "label": "3034",
-        "name": "l-transversetemporal",
+        "name": "wm-lh-transversetemporal",
         "color": {
             "r": 105,
             "g": 105,
@@ -4438,7 +4438,7 @@
     },
     {
         "label": "3035",
-        "name": "l-insula",
+        "name": "wm-lh-insula",
         "color": {
             "r": 20,
             "g": 220,
@@ -4447,7 +4447,7 @@
     },
     {
         "label": "4000",
-        "name": "r-unknown",
+        "name": "wm-rh-unknown",
         "color": {
             "r": 230,
             "g": 250,
@@ -4456,7 +4456,7 @@
     },
     {
         "label": "4001",
-        "name": "r-bankssts",
+        "name": "wm-rh-bankssts",
         "color": {
             "r": 230,
             "g": 155,
@@ -4465,7 +4465,7 @@
     },
     {
         "label": "4002",
-        "name": "r-caudalanteriorcingulate",
+        "name": "wm-rh-caudalanteriorcingulate",
         "color": {
             "r": 130,
             "g": 155,
@@ -4474,7 +4474,7 @@
     },
     {
         "label": "4003",
-        "name": "r-caudalmiddlefrontal",
+        "name": "wm-rh-caudalmiddlefrontal",
         "color": {
             "r": 155,
             "g": 230,
@@ -4483,7 +4483,7 @@
     },
     {
         "label": "4004",
-        "name": "r-corpuscallosum",
+        "name": "wm-rh-corpuscallosum",
         "color": {
             "r": 135,
             "g": 185,
@@ -4492,7 +4492,7 @@
     },
     {
         "label": "4005",
-        "name": "r-cuneus",
+        "name": "wm-rh-cuneus",
         "color": {
             "r": 35,
             "g": 235,
@@ -4501,7 +4501,7 @@
     },
     {
         "label": "4006",
-        "name": "r-entorhinal",
+        "name": "wm-rh-entorhinal",
         "color": {
             "r": 35,
             "g": 235,
@@ -4510,7 +4510,7 @@
     },
     {
         "label": "4007",
-        "name": "r-fusiform",
+        "name": "wm-rh-fusiform",
         "color": {
             "r": 75,
             "g": 35,
@@ -4519,7 +4519,7 @@
     },
     {
         "label": "4008",
-        "name": "r-inferiorparietal",
+        "name": "wm-rh-inferiorparietal",
         "color": {
             "r": 35,
             "g": 195,
@@ -4528,7 +4528,7 @@
     },
     {
         "label": "4009",
-        "name": "r-inferiortemporal",
+        "name": "wm-rh-inferiortemporal",
         "color": {
             "r": 75,
             "g": 215,
@@ -4537,7 +4537,7 @@
     },
     {
         "label": "4010",
-        "name": "r-isthmuscingulate",
+        "name": "wm-rh-isthmuscingulate",
         "color": {
             "r": 115,
             "g": 235,
@@ -4546,7 +4546,7 @@
     },
     {
         "label": "4011",
-        "name": "r-lateraloccipital",
+        "name": "wm-rh-lateraloccipital",
         "color": {
             "r": 235,
             "g": 225,
@@ -4555,7 +4555,7 @@
     },
     {
         "label": "4012",
-        "name": "r-lateralorbitofrontal",
+        "name": "wm-rh-lateralorbitofrontal",
         "color": {
             "r": 220,
             "g": 180,
@@ -4564,7 +4564,7 @@
     },
     {
         "label": "4013",
-        "name": "r-lingual",
+        "name": "wm-rh-lingual",
         "color": {
             "r": 30,
             "g": 115,
@@ -4573,7 +4573,7 @@
     },
     {
         "label": "4014",
-        "name": "r-medialorbitofrontal",
+        "name": "wm-rh-medialorbitofrontal",
         "color": {
             "r": 55,
             "g": 220,
@@ -4582,7 +4582,7 @@
     },
     {
         "label": "4015",
-        "name": "r-middletemporal",
+        "name": "wm-rh-middletemporal",
         "color": {
             "r": 95,
             "g": 155,
@@ -4591,7 +4591,7 @@
     },
     {
         "label": "4016",
-        "name": "r-parahippocampal",
+        "name": "wm-rh-parahippocampal",
         "color": {
             "r": 235,
             "g": 35,
@@ -4600,7 +4600,7 @@
     },
     {
         "label": "4017",
-        "name": "r-paracentral",
+        "name": "wm-rh-paracentral",
         "color": {
             "r": 195,
             "g": 35,
@@ -4609,7 +4609,7 @@
     },
     {
         "label": "4018",
-        "name": "r-parsopercularis",
+        "name": "wm-rh-parsopercularis",
         "color": {
             "r": 35,
             "g": 75,
@@ -4618,7 +4618,7 @@
     },
     {
         "label": "4019",
-        "name": "r-parsorbitalis",
+        "name": "wm-rh-parsorbitalis",
         "color": {
             "r": 235,
             "g": 155,
@@ -4627,7 +4627,7 @@
     },
     {
         "label": "4020",
-        "name": "r-parstriangularis",
+        "name": "wm-rh-parstriangularis",
         "color": {
             "r": 35,
             "g": 195,
@@ -4636,7 +4636,7 @@
     },
     {
         "label": "4021",
-        "name": "r-pericalcarine",
+        "name": "wm-rh-pericalcarine",
         "color": {
             "r": 135,
             "g": 155,
@@ -4645,7 +4645,7 @@
     },
     {
         "label": "4022",
-        "name": "r-postcentral",
+        "name": "wm-rh-postcentral",
         "color": {
             "r": 35,
             "g": 235,
@@ -4654,7 +4654,7 @@
     },
     {
         "label": "4023",
-        "name": "r-posteriorcingulate",
+        "name": "wm-rh-posteriorcingulate",
         "color": {
             "r": 35,
             "g": 75,
@@ -4663,7 +4663,7 @@
     },
     {
         "label": "4024",
-        "name": "r-precentral",
+        "name": "wm-rh-precentral",
         "color": {
             "r": 195,
             "g": 235,
@@ -4672,7 +4672,7 @@
     },
     {
         "label": "4025",
-        "name": "r-precuneus",
+        "name": "wm-rh-precuneus",
         "color": {
             "r": 95,
             "g": 115,
@@ -4681,7 +4681,7 @@
     },
     {
         "label": "4026",
-        "name": "r-rostralanteriorcingulate",
+        "name": "wm-rh-rostralanteriorcingulate",
         "color": {
             "r": 175,
             "g": 235,
@@ -4690,7 +4690,7 @@
     },
     {
         "label": "4027",
-        "name": "r-rostralmiddlefrontal",
+        "name": "wm-rh-rostralmiddlefrontal",
         "color": {
             "r": 180,
             "g": 205,
@@ -4699,7 +4699,7 @@
     },
     {
         "label": "4028",
-        "name": "r-superiorfrontal",
+        "name": "wm-rh-superiorfrontal",
         "color": {
             "r": 235,
             "g": 35,
@@ -4708,7 +4708,7 @@
     },
     {
         "label": "4029",
-        "name": "r-superiorparietal",
+        "name": "wm-rh-superiorparietal",
         "color": {
             "r": 235,
             "g": 75,
@@ -4717,7 +4717,7 @@
     },
     {
         "label": "4030",
-        "name": "r-superiortemporal",
+        "name": "wm-rh-superiortemporal",
         "color": {
             "r": 115,
             "g": 35,
@@ -4726,7 +4726,7 @@
     },
     {
         "label": "4031",
-        "name": "r-supramarginal",
+        "name": "wm-rh-supramarginal",
         "color": {
             "r": 175,
             "g": 95,
@@ -4735,7 +4735,7 @@
     },
     {
         "label": "4032",
-        "name": "r-frontalpole",
+        "name": "wm-rh-frontalpole",
         "color": {
             "r": 155,
             "g": 255,
@@ -4744,7 +4744,7 @@
     },
     {
         "label": "4033",
-        "name": "r-temporalpole",
+        "name": "wm-rh-temporalpole",
         "color": {
             "r": 185,
             "g": 185,
@@ -4753,7 +4753,7 @@
     },
     {
         "label": "4034",
-        "name": "r-transversetemporal",
+        "name": "wm-rh-transversetemporal",
         "color": {
             "r": 105,
             "g": 105,
@@ -4762,7 +4762,7 @@
     },
     {
         "label": "4035",
-        "name": "r-insula",
+        "name": "wm-rh-insula",
         "color": {
             "r": 20,
             "g": 220,
@@ -4879,7 +4879,7 @@
     },
     {
         "label": "1100",
-        "name": "l-Unknown",
+        "name": "ctx-lh-Unknown",
         "color": {
             "r": 0,
             "g": 0,
@@ -4888,7 +4888,7 @@
     },
     {
         "label": "1101",
-        "name": "l-Corpus_callosum",
+        "name": "ctx-lh-Corpus_callosum",
         "color": {
             "r": 50,
             "g": 50,
@@ -4897,7 +4897,7 @@
     },
     {
         "label": "1102",
-        "name": "l-G_and_S_Insula_ONLY_AVERAGE",
+        "name": "ctx-lh-G_and_S_Insula_ONLY_AVERAGE",
         "color": {
             "r": 180,
             "g": 20,
@@ -5005,7 +5005,7 @@
     },
     {
         "label": "1105",
-        "name": "l-G_cuneus",
+        "name": "ctx-lh-G_cuneus",
         "color": {
             "r": 180,
             "g": 20,
@@ -5041,7 +5041,7 @@
     },
     {
         "label": "1109",
-        "name": "l-G_frontal_middle",
+        "name": "ctx-lh-G_frontal_middle",
         "color": {
             "r": 140,
             "g": 100,
@@ -5050,7 +5050,7 @@
     },
     {
         "label": "1110",
-        "name": "l-G_frontal_superior",
+        "name": "ctx-lh-G_frontal_superior",
         "color": {
             "r": 180,
             "g": 20,
@@ -5059,7 +5059,7 @@
     },
     {
         "label": "1111",
-        "name": "l-G_frontomarginal",
+        "name": "ctx-lh-G_frontomarginal",
         "color": {
             "r": 140,
             "g": 20,
@@ -5068,7 +5068,7 @@
     },
     {
         "label": "1112",
-        "name": "l-G_insular_long",
+        "name": "ctx-lh-G_insular_long",
         "color": {
             "r": 21,
             "g": 10,
@@ -5077,7 +5077,7 @@
     },
     {
         "label": "1113",
-        "name": "l-G_insular_short",
+        "name": "ctx-lh-G_insular_short",
         "color": {
             "r": 225,
             "g": 140,
@@ -5086,7 +5086,7 @@
     },
     {
         "label": "1114",
-        "name": "l-G_and_S_occipital_inferior",
+        "name": "ctx-lh-G_and_S_occipital_inferior",
         "color": {
             "r": 23,
             "g": 60,
@@ -5095,7 +5095,7 @@
     },
     {
         "label": "1115",
-        "name": "l-G_occipital_middle",
+        "name": "ctx-lh-G_occipital_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -5104,7 +5104,7 @@
     },
     {
         "label": "1116",
-        "name": "l-G_occipital_superior",
+        "name": "ctx-lh-G_occipital_superior",
         "color": {
             "r": 20,
             "g": 220,
@@ -5140,7 +5140,7 @@
     },
     {
         "label": "1120",
-        "name": "l-G_orbital",
+        "name": "ctx-lh-G_orbital",
         "color": {
             "r": 220,
             "g": 60,
@@ -5149,7 +5149,7 @@
     },
     {
         "label": "1121",
-        "name": "l-G_paracentral",
+        "name": "ctx-lh-G_paracentral",
         "color": {
             "r": 60,
             "g": 100,
@@ -5176,7 +5176,7 @@
     },
     {
         "label": "1124",
-        "name": "l-G_parietal_superior",
+        "name": "ctx-lh-G_parietal_superior",
         "color": {
             "r": 220,
             "g": 180,
@@ -5185,7 +5185,7 @@
     },
     {
         "label": "1125",
-        "name": "l-G_postcentral",
+        "name": "ctx-lh-G_postcentral",
         "color": {
             "r": 20,
             "g": 180,
@@ -5194,7 +5194,7 @@
     },
     {
         "label": "1126",
-        "name": "l-G_precentral",
+        "name": "ctx-lh-G_precentral",
         "color": {
             "r": 60,
             "g": 140,
@@ -5203,7 +5203,7 @@
     },
     {
         "label": "1127",
-        "name": "l-G_precuneus",
+        "name": "ctx-lh-G_precuneus",
         "color": {
             "r": 25,
             "g": 20,
@@ -5212,7 +5212,7 @@
     },
     {
         "label": "1128",
-        "name": "l-G_rectus",
+        "name": "ctx-lh-G_rectus",
         "color": {
             "r": 20,
             "g": 60,
@@ -5221,7 +5221,7 @@
     },
     {
         "label": "1129",
-        "name": "l-G_subcallosal",
+        "name": "ctx-lh-G_subcallosal",
         "color": {
             "r": 60,
             "g": 220,
@@ -5230,7 +5230,7 @@
     },
     {
         "label": "1130",
-        "name": "l-G_subcentral",
+        "name": "ctx-lh-G_subcentral",
         "color": {
             "r": 60,
             "g": 20,
@@ -5239,7 +5239,7 @@
     },
     {
         "label": "1131",
-        "name": "l-G_temporal_inferior",
+        "name": "ctx-lh-G_temporal_inferior",
         "color": {
             "r": 220,
             "g": 220,
@@ -5248,7 +5248,7 @@
     },
     {
         "label": "1132",
-        "name": "l-G_temporal_middle",
+        "name": "ctx-lh-G_temporal_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -5293,7 +5293,7 @@
     },
     {
         "label": "1137",
-        "name": "l-G_and_S_transverse_frontopolar",
+        "name": "ctx-lh-G_and_S_transverse_frontopolar",
         "color": {
             "r": 13,
             "g": 0,
@@ -5329,7 +5329,7 @@
     },
     {
         "label": "1141",
-        "name": "l-Medial_wall",
+        "name": "ctx-lh-Medial_wall",
         "color": {
             "r": 25,
             "g": 25,
@@ -5338,7 +5338,7 @@
     },
     {
         "label": "1142",
-        "name": "l-Pole_occipital",
+        "name": "ctx-lh-Pole_occipital",
         "color": {
             "r": 140,
             "g": 20,
@@ -5347,7 +5347,7 @@
     },
     {
         "label": "1143",
-        "name": "l-Pole_temporal",
+        "name": "ctx-lh-Pole_temporal",
         "color": {
             "r": 220,
             "g": 180,
@@ -5356,7 +5356,7 @@
     },
     {
         "label": "1144",
-        "name": "l-S_calcarine",
+        "name": "ctx-lh-S_calcarine",
         "color": {
             "r": 63,
             "g": 180,
@@ -5365,7 +5365,7 @@
     },
     {
         "label": "1145",
-        "name": "l-S_central",
+        "name": "ctx-lh-S_central",
         "color": {
             "r": 221,
             "g": 20,
@@ -5374,7 +5374,7 @@
     },
     {
         "label": "1146",
-        "name": "l-S_central_insula",
+        "name": "ctx-lh-S_central_insula",
         "color": {
             "r": 21,
             "g": 220,
@@ -5401,7 +5401,7 @@
     },
     {
         "label": "1149",
-        "name": "l-S_circular_insula_anterior",
+        "name": "ctx-lh-S_circular_insula_anterior",
         "color": {
             "r": 221,
             "g": 60,
@@ -5410,7 +5410,7 @@
     },
     {
         "label": "1150",
-        "name": "l-S_circular_insula_inferior",
+        "name": "ctx-lh-S_circular_insula_inferior",
         "color": {
             "r": 221,
             "g": 20,
@@ -5419,7 +5419,7 @@
     },
     {
         "label": "1151",
-        "name": "l-S_circular_insula_superior",
+        "name": "ctx-lh-S_circular_insula_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -5428,7 +5428,7 @@
     },
     {
         "label": "1152",
-        "name": "l-S_collateral_transverse_ant",
+        "name": "ctx-lh-S_collateral_transverse_ant",
         "color": {
             "r": 100,
             "g": 200,
@@ -5437,7 +5437,7 @@
     },
     {
         "label": "1153",
-        "name": "l-S_collateral_transverse_post",
+        "name": "ctx-lh-S_collateral_transverse_post",
         "color": {
             "r": 10,
             "g": 200,
@@ -5446,7 +5446,7 @@
     },
     {
         "label": "1154",
-        "name": "l-S_frontal_inferior",
+        "name": "ctx-lh-S_frontal_inferior",
         "color": {
             "r": 221,
             "g": 220,
@@ -5455,7 +5455,7 @@
     },
     {
         "label": "1155",
-        "name": "l-S_frontal_middle",
+        "name": "ctx-lh-S_frontal_middle",
         "color": {
             "r": 141,
             "g": 20,
@@ -5464,7 +5464,7 @@
     },
     {
         "label": "1156",
-        "name": "l-S_frontal_superior",
+        "name": "ctx-lh-S_frontal_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -5473,7 +5473,7 @@
     },
     {
         "label": "1157",
-        "name": "l-S_frontomarginal",
+        "name": "ctx-lh-S_frontomarginal",
         "color": {
             "r": 21,
             "g": 220,
@@ -5500,7 +5500,7 @@
     },
     {
         "label": "1160",
-        "name": "l-S_occipital_anterior",
+        "name": "ctx-lh-S_occipital_anterior",
         "color": {
             "r": 61,
             "g": 20,
@@ -5509,7 +5509,7 @@
     },
     {
         "label": "1161",
-        "name": "l-S_occipital_middle_and_Lunatus",
+        "name": "ctx-lh-S_occipital_middle_and_Lunatus",
         "color": {
             "r": 101,
             "g": 60,
@@ -5518,7 +5518,7 @@
     },
     {
         "label": "1162",
-        "name": "l-S_occipital_superior_and_transversalis",
+        "name": "ctx-lh-S_occipital_superior_and_transversalis",
         "color": {
             "r": 21,
             "g": 20,
@@ -5554,7 +5554,7 @@
     },
     {
         "label": "1166",
-        "name": "l-S_orbital_lateral",
+        "name": "ctx-lh-S_orbital_lateral",
         "color": {
             "r": 221,
             "g": 100,
@@ -5572,7 +5572,7 @@
     },
     {
         "label": "1168",
-        "name": "l-S_paracentral",
+        "name": "ctx-lh-S_paracentral",
         "color": {
             "r": 21,
             "g": 180,
@@ -5581,7 +5581,7 @@
     },
     {
         "label": "1169",
-        "name": "l-S_parieto_occipital",
+        "name": "ctx-lh-S_parieto_occipital",
         "color": {
             "r": 101,
             "g": 100,
@@ -5590,7 +5590,7 @@
     },
     {
         "label": "1170",
-        "name": "l-S_pericallosal",
+        "name": "ctx-lh-S_pericallosal",
         "color": {
             "r": 181,
             "g": 220,
@@ -5599,7 +5599,7 @@
     },
     {
         "label": "1171",
-        "name": "l-S_postcentral",
+        "name": "ctx-lh-S_postcentral",
         "color": {
             "r": 21,
             "g": 140,
@@ -5626,7 +5626,7 @@
     },
     {
         "label": "1174",
-        "name": "l-S_subcentral_ant",
+        "name": "ctx-lh-S_subcentral_ant",
         "color": {
             "r": 61,
             "g": 180,
@@ -5635,7 +5635,7 @@
     },
     {
         "label": "1175",
-        "name": "l-S_subcentral_post",
+        "name": "ctx-lh-S_subcentral_post",
         "color": {
             "r": 61,
             "g": 180,
@@ -5644,7 +5644,7 @@
     },
     {
         "label": "1176",
-        "name": "l-S_suborbital",
+        "name": "ctx-lh-S_suborbital",
         "color": {
             "r": 21,
             "g": 20,
@@ -5653,7 +5653,7 @@
     },
     {
         "label": "1177",
-        "name": "l-S_subparietal",
+        "name": "ctx-lh-S_subparietal",
         "color": {
             "r": 101,
             "g": 60,
@@ -5662,7 +5662,7 @@
     },
     {
         "label": "1178",
-        "name": "l-S_supracingulate",
+        "name": "ctx-lh-S_supracingulate",
         "color": {
             "r": 21,
             "g": 220,
@@ -5671,7 +5671,7 @@
     },
     {
         "label": "1179",
-        "name": "l-S_temporal_inferior",
+        "name": "ctx-lh-S_temporal_inferior",
         "color": {
             "r": 21,
             "g": 180,
@@ -5680,7 +5680,7 @@
     },
     {
         "label": "1180",
-        "name": "l-S_temporal_superior",
+        "name": "ctx-lh-S_temporal_superior",
         "color": {
             "r": 223,
             "g": 220,
@@ -5689,7 +5689,7 @@
     },
     {
         "label": "1181",
-        "name": "l-S_temporal_transverse",
+        "name": "ctx-lh-S_temporal_transverse",
         "color": {
             "r": 221,
             "g": 60,
@@ -5698,7 +5698,7 @@
     },
     {
         "label": "2100",
-        "name": "r-Unknown",
+        "name": "ctx-rh-Unknown",
         "color": {
             "r": 0,
             "g": 0,
@@ -5707,7 +5707,7 @@
     },
     {
         "label": "2101",
-        "name": "r-Corpus_callosum",
+        "name": "ctx-rh-Corpus_callosum",
         "color": {
             "r": 50,
             "g": 50,
@@ -5716,7 +5716,7 @@
     },
     {
         "label": "2102",
-        "name": "r-G_and_S_Insula_ONLY_AVERAGE",
+        "name": "ctx-rh-G_and_S_Insula_ONLY_AVERAGE",
         "color": {
             "r": 180,
             "g": 20,
@@ -5743,7 +5743,7 @@
     },
     {
         "label": "2105",
-        "name": "r-G_cuneus",
+        "name": "ctx-rh-G_cuneus",
         "color": {
             "r": 180,
             "g": 20,
@@ -5779,7 +5779,7 @@
     },
     {
         "label": "2109",
-        "name": "r-G_frontal_middle",
+        "name": "ctx-rh-G_frontal_middle",
         "color": {
             "r": 140,
             "g": 100,
@@ -5788,7 +5788,7 @@
     },
     {
         "label": "2110",
-        "name": "r-G_frontal_superior",
+        "name": "ctx-rh-G_frontal_superior",
         "color": {
             "r": 180,
             "g": 20,
@@ -5797,7 +5797,7 @@
     },
     {
         "label": "2111",
-        "name": "r-G_frontomarginal",
+        "name": "ctx-rh-G_frontomarginal",
         "color": {
             "r": 140,
             "g": 20,
@@ -5806,7 +5806,7 @@
     },
     {
         "label": "2112",
-        "name": "r-G_insular_long",
+        "name": "ctx-rh-G_insular_long",
         "color": {
             "r": 21,
             "g": 10,
@@ -5815,7 +5815,7 @@
     },
     {
         "label": "2113",
-        "name": "r-G_insular_short",
+        "name": "ctx-rh-G_insular_short",
         "color": {
             "r": 225,
             "g": 140,
@@ -5824,7 +5824,7 @@
     },
     {
         "label": "2114",
-        "name": "r-G_and_S_occipital_inferior",
+        "name": "ctx-rh-G_and_S_occipital_inferior",
         "color": {
             "r": 23,
             "g": 60,
@@ -5833,7 +5833,7 @@
     },
     {
         "label": "2115",
-        "name": "r-G_occipital_middle",
+        "name": "ctx-rh-G_occipital_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -5842,7 +5842,7 @@
     },
     {
         "label": "2116",
-        "name": "r-G_occipital_superior",
+        "name": "ctx-rh-G_occipital_superior",
         "color": {
             "r": 20,
             "g": 220,
@@ -5878,7 +5878,7 @@
     },
     {
         "label": "2120",
-        "name": "r-G_orbital",
+        "name": "ctx-rh-G_orbital",
         "color": {
             "r": 220,
             "g": 60,
@@ -5887,7 +5887,7 @@
     },
     {
         "label": "2121",
-        "name": "r-G_paracentral",
+        "name": "ctx-rh-G_paracentral",
         "color": {
             "r": 60,
             "g": 100,
@@ -5914,7 +5914,7 @@
     },
     {
         "label": "2124",
-        "name": "r-G_parietal_superior",
+        "name": "ctx-rh-G_parietal_superior",
         "color": {
             "r": 220,
             "g": 180,
@@ -5923,7 +5923,7 @@
     },
     {
         "label": "2125",
-        "name": "r-G_postcentral",
+        "name": "ctx-rh-G_postcentral",
         "color": {
             "r": 20,
             "g": 180,
@@ -5932,7 +5932,7 @@
     },
     {
         "label": "2126",
-        "name": "r-G_precentral",
+        "name": "ctx-rh-G_precentral",
         "color": {
             "r": 60,
             "g": 140,
@@ -5941,7 +5941,7 @@
     },
     {
         "label": "2127",
-        "name": "r-G_precuneus",
+        "name": "ctx-rh-G_precuneus",
         "color": {
             "r": 25,
             "g": 20,
@@ -5950,7 +5950,7 @@
     },
     {
         "label": "2128",
-        "name": "r-G_rectus",
+        "name": "ctx-rh-G_rectus",
         "color": {
             "r": 20,
             "g": 60,
@@ -5959,7 +5959,7 @@
     },
     {
         "label": "2129",
-        "name": "r-G_subcallosal",
+        "name": "ctx-rh-G_subcallosal",
         "color": {
             "r": 60,
             "g": 220,
@@ -5968,7 +5968,7 @@
     },
     {
         "label": "2130",
-        "name": "r-G_subcentral",
+        "name": "ctx-rh-G_subcentral",
         "color": {
             "r": 60,
             "g": 20,
@@ -5977,7 +5977,7 @@
     },
     {
         "label": "2131",
-        "name": "r-G_temporal_inferior",
+        "name": "ctx-rh-G_temporal_inferior",
         "color": {
             "r": 220,
             "g": 220,
@@ -5986,7 +5986,7 @@
     },
     {
         "label": "2132",
-        "name": "r-G_temporal_middle",
+        "name": "ctx-rh-G_temporal_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -6031,7 +6031,7 @@
     },
     {
         "label": "2137",
-        "name": "r-G_and_S_transverse_frontopolar",
+        "name": "ctx-rh-G_and_S_transverse_frontopolar",
         "color": {
             "r": 13,
             "g": 0,
@@ -6067,7 +6067,7 @@
     },
     {
         "label": "2141",
-        "name": "r-Medial_wall",
+        "name": "ctx-rh-Medial_wall",
         "color": {
             "r": 25,
             "g": 25,
@@ -6076,7 +6076,7 @@
     },
     {
         "label": "2142",
-        "name": "r-Pole_occipital",
+        "name": "ctx-rh-Pole_occipital",
         "color": {
             "r": 140,
             "g": 20,
@@ -6085,7 +6085,7 @@
     },
     {
         "label": "2143",
-        "name": "r-Pole_temporal",
+        "name": "ctx-rh-Pole_temporal",
         "color": {
             "r": 220,
             "g": 180,
@@ -6094,7 +6094,7 @@
     },
     {
         "label": "2144",
-        "name": "r-S_calcarine",
+        "name": "ctx-rh-S_calcarine",
         "color": {
             "r": 63,
             "g": 180,
@@ -6103,7 +6103,7 @@
     },
     {
         "label": "2145",
-        "name": "r-S_central",
+        "name": "ctx-rh-S_central",
         "color": {
             "r": 221,
             "g": 20,
@@ -6112,7 +6112,7 @@
     },
     {
         "label": "2146",
-        "name": "r-S_central_insula",
+        "name": "ctx-rh-S_central_insula",
         "color": {
             "r": 21,
             "g": 220,
@@ -6139,7 +6139,7 @@
     },
     {
         "label": "2149",
-        "name": "r-S_circular_insula_anterior",
+        "name": "ctx-rh-S_circular_insula_anterior",
         "color": {
             "r": 221,
             "g": 60,
@@ -6148,7 +6148,7 @@
     },
     {
         "label": "2150",
-        "name": "r-S_circular_insula_inferior",
+        "name": "ctx-rh-S_circular_insula_inferior",
         "color": {
             "r": 221,
             "g": 20,
@@ -6157,7 +6157,7 @@
     },
     {
         "label": "2151",
-        "name": "r-S_circular_insula_superior",
+        "name": "ctx-rh-S_circular_insula_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -6166,7 +6166,7 @@
     },
     {
         "label": "2152",
-        "name": "r-S_collateral_transverse_ant",
+        "name": "ctx-rh-S_collateral_transverse_ant",
         "color": {
             "r": 100,
             "g": 200,
@@ -6175,7 +6175,7 @@
     },
     {
         "label": "2153",
-        "name": "r-S_collateral_transverse_post",
+        "name": "ctx-rh-S_collateral_transverse_post",
         "color": {
             "r": 10,
             "g": 200,
@@ -6184,7 +6184,7 @@
     },
     {
         "label": "2154",
-        "name": "r-S_frontal_inferior",
+        "name": "ctx-rh-S_frontal_inferior",
         "color": {
             "r": 221,
             "g": 220,
@@ -6193,7 +6193,7 @@
     },
     {
         "label": "2155",
-        "name": "r-S_frontal_middle",
+        "name": "ctx-rh-S_frontal_middle",
         "color": {
             "r": 141,
             "g": 20,
@@ -6202,7 +6202,7 @@
     },
     {
         "label": "2156",
-        "name": "r-S_frontal_superior",
+        "name": "ctx-rh-S_frontal_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -6211,7 +6211,7 @@
     },
     {
         "label": "2157",
-        "name": "r-S_frontomarginal",
+        "name": "ctx-rh-S_frontomarginal",
         "color": {
             "r": 21,
             "g": 220,
@@ -6238,7 +6238,7 @@
     },
     {
         "label": "2160",
-        "name": "r-S_occipital_anterior",
+        "name": "ctx-rh-S_occipital_anterior",
         "color": {
             "r": 61,
             "g": 20,
@@ -6247,7 +6247,7 @@
     },
     {
         "label": "2161",
-        "name": "r-S_occipital_middle_and_Lunatus",
+        "name": "ctx-rh-S_occipital_middle_and_Lunatus",
         "color": {
             "r": 101,
             "g": 60,
@@ -6256,7 +6256,7 @@
     },
     {
         "label": "2162",
-        "name": "r-S_occipital_superior_and_transversalis",
+        "name": "ctx-rh-S_occipital_superior_and_transversalis",
         "color": {
             "r": 21,
             "g": 20,
@@ -6292,7 +6292,7 @@
     },
     {
         "label": "2166",
-        "name": "r-S_orbital_lateral",
+        "name": "ctx-rh-S_orbital_lateral",
         "color": {
             "r": 221,
             "g": 100,
@@ -6310,7 +6310,7 @@
     },
     {
         "label": "2168",
-        "name": "r-S_paracentral",
+        "name": "ctx-rh-S_paracentral",
         "color": {
             "r": 21,
             "g": 180,
@@ -6319,7 +6319,7 @@
     },
     {
         "label": "2169",
-        "name": "r-S_parieto_occipital",
+        "name": "ctx-rh-S_parieto_occipital",
         "color": {
             "r": 101,
             "g": 100,
@@ -6328,7 +6328,7 @@
     },
     {
         "label": "2170",
-        "name": "r-S_pericallosal",
+        "name": "ctx-rh-S_pericallosal",
         "color": {
             "r": 181,
             "g": 220,
@@ -6337,7 +6337,7 @@
     },
     {
         "label": "2171",
-        "name": "r-S_postcentral",
+        "name": "ctx-rh-S_postcentral",
         "color": {
             "r": 21,
             "g": 140,
@@ -6364,7 +6364,7 @@
     },
     {
         "label": "2174",
-        "name": "r-S_subcentral_ant",
+        "name": "ctx-rh-S_subcentral_ant",
         "color": {
             "r": 61,
             "g": 180,
@@ -6373,7 +6373,7 @@
     },
     {
         "label": "2175",
-        "name": "r-S_subcentral_post",
+        "name": "ctx-rh-S_subcentral_post",
         "color": {
             "r": 61,
             "g": 180,
@@ -6382,7 +6382,7 @@
     },
     {
         "label": "2176",
-        "name": "r-S_suborbital",
+        "name": "ctx-rh-S_suborbital",
         "color": {
             "r": 21,
             "g": 20,
@@ -6391,7 +6391,7 @@
     },
     {
         "label": "2177",
-        "name": "r-S_subparietal",
+        "name": "ctx-rh-S_subparietal",
         "color": {
             "r": 101,
             "g": 60,
@@ -6400,7 +6400,7 @@
     },
     {
         "label": "2178",
-        "name": "r-S_supracingulate",
+        "name": "ctx-rh-S_supracingulate",
         "color": {
             "r": 21,
             "g": 220,
@@ -6409,7 +6409,7 @@
     },
     {
         "label": "2179",
-        "name": "r-S_temporal_inferior",
+        "name": "ctx-rh-S_temporal_inferior",
         "color": {
             "r": 21,
             "g": 180,
@@ -6418,7 +6418,7 @@
     },
     {
         "label": "2180",
-        "name": "r-S_temporal_superior",
+        "name": "ctx-rh-S_temporal_superior",
         "color": {
             "r": 223,
             "g": 220,
@@ -6427,7 +6427,7 @@
     },
     {
         "label": "2181",
-        "name": "r-S_temporal_transverse",
+        "name": "ctx-rh-S_temporal_transverse",
         "color": {
             "r": 221,
             "g": 60,
@@ -6517,7 +6517,7 @@
     },
     {
         "label": "3100",
-        "name": "l-Unknown",
+        "name": "wm-lh-Unknown",
         "color": {
             "r": 0,
             "g": 0,
@@ -6526,7 +6526,7 @@
     },
     {
         "label": "3101",
-        "name": "l-Corpus_callosum",
+        "name": "wm-lh-Corpus_callosum",
         "color": {
             "r": 50,
             "g": 50,
@@ -6535,7 +6535,7 @@
     },
     {
         "label": "3102",
-        "name": "l-G_and_S_Insula_ONLY_AVERAGE",
+        "name": "wm-lh-G_and_S_Insula_ONLY_AVERAGE",
         "color": {
             "r": 180,
             "g": 20,
@@ -6562,7 +6562,7 @@
     },
     {
         "label": "3105",
-        "name": "l-G_cuneus",
+        "name": "wm-lh-G_cuneus",
         "color": {
             "r": 180,
             "g": 20,
@@ -6598,7 +6598,7 @@
     },
     {
         "label": "3109",
-        "name": "l-G_frontal_middle",
+        "name": "wm-lh-G_frontal_middle",
         "color": {
             "r": 140,
             "g": 100,
@@ -6607,7 +6607,7 @@
     },
     {
         "label": "3110",
-        "name": "l-G_frontal_superior",
+        "name": "wm-lh-G_frontal_superior",
         "color": {
             "r": 180,
             "g": 20,
@@ -6616,7 +6616,7 @@
     },
     {
         "label": "3111",
-        "name": "l-G_frontomarginal",
+        "name": "wm-lh-G_frontomarginal",
         "color": {
             "r": 140,
             "g": 20,
@@ -6625,7 +6625,7 @@
     },
     {
         "label": "3112",
-        "name": "l-G_insular_long",
+        "name": "wm-lh-G_insular_long",
         "color": {
             "r": 21,
             "g": 10,
@@ -6634,7 +6634,7 @@
     },
     {
         "label": "3113",
-        "name": "l-G_insular_short",
+        "name": "wm-lh-G_insular_short",
         "color": {
             "r": 225,
             "g": 140,
@@ -6643,7 +6643,7 @@
     },
     {
         "label": "3114",
-        "name": "l-G_and_S_occipital_inferior",
+        "name": "wm-lh-G_and_S_occipital_inferior",
         "color": {
             "r": 23,
             "g": 60,
@@ -6652,7 +6652,7 @@
     },
     {
         "label": "3115",
-        "name": "l-G_occipital_middle",
+        "name": "wm-lh-G_occipital_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -6661,7 +6661,7 @@
     },
     {
         "label": "3116",
-        "name": "l-G_occipital_superior",
+        "name": "wm-lh-G_occipital_superior",
         "color": {
             "r": 20,
             "g": 220,
@@ -6697,7 +6697,7 @@
     },
     {
         "label": "3120",
-        "name": "l-G_orbital",
+        "name": "wm-lh-G_orbital",
         "color": {
             "r": 220,
             "g": 60,
@@ -6706,7 +6706,7 @@
     },
     {
         "label": "3121",
-        "name": "l-G_paracentral",
+        "name": "wm-lh-G_paracentral",
         "color": {
             "r": 60,
             "g": 100,
@@ -6733,7 +6733,7 @@
     },
     {
         "label": "3124",
-        "name": "l-G_parietal_superior",
+        "name": "wm-lh-G_parietal_superior",
         "color": {
             "r": 220,
             "g": 180,
@@ -6742,7 +6742,7 @@
     },
     {
         "label": "3125",
-        "name": "l-G_postcentral",
+        "name": "wm-lh-G_postcentral",
         "color": {
             "r": 20,
             "g": 180,
@@ -6751,7 +6751,7 @@
     },
     {
         "label": "3126",
-        "name": "l-G_precentral",
+        "name": "wm-lh-G_precentral",
         "color": {
             "r": 60,
             "g": 140,
@@ -6760,7 +6760,7 @@
     },
     {
         "label": "3127",
-        "name": "l-G_precuneus",
+        "name": "wm-lh-G_precuneus",
         "color": {
             "r": 25,
             "g": 20,
@@ -6769,7 +6769,7 @@
     },
     {
         "label": "3128",
-        "name": "l-G_rectus",
+        "name": "wm-lh-G_rectus",
         "color": {
             "r": 20,
             "g": 60,
@@ -6778,7 +6778,7 @@
     },
     {
         "label": "3129",
-        "name": "l-G_subcallosal",
+        "name": "wm-lh-G_subcallosal",
         "color": {
             "r": 60,
             "g": 220,
@@ -6787,7 +6787,7 @@
     },
     {
         "label": "3130",
-        "name": "l-G_subcentral",
+        "name": "wm-lh-G_subcentral",
         "color": {
             "r": 60,
             "g": 20,
@@ -6796,7 +6796,7 @@
     },
     {
         "label": "3131",
-        "name": "l-G_temporal_inferior",
+        "name": "wm-lh-G_temporal_inferior",
         "color": {
             "r": 220,
             "g": 220,
@@ -6805,7 +6805,7 @@
     },
     {
         "label": "3132",
-        "name": "l-G_temporal_middle",
+        "name": "wm-lh-G_temporal_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -6850,7 +6850,7 @@
     },
     {
         "label": "3137",
-        "name": "l-G_and_S_transverse_frontopolar",
+        "name": "wm-lh-G_and_S_transverse_frontopolar",
         "color": {
             "r": 13,
             "g": 0,
@@ -6886,7 +6886,7 @@
     },
     {
         "label": "3141",
-        "name": "l-Medial_wall",
+        "name": "wm-lh-Medial_wall",
         "color": {
             "r": 25,
             "g": 25,
@@ -6895,7 +6895,7 @@
     },
     {
         "label": "3142",
-        "name": "l-Pole_occipital",
+        "name": "wm-lh-Pole_occipital",
         "color": {
             "r": 140,
             "g": 20,
@@ -6904,7 +6904,7 @@
     },
     {
         "label": "3143",
-        "name": "l-Pole_temporal",
+        "name": "wm-lh-Pole_temporal",
         "color": {
             "r": 220,
             "g": 180,
@@ -6913,7 +6913,7 @@
     },
     {
         "label": "3144",
-        "name": "l-S_calcarine",
+        "name": "wm-lh-S_calcarine",
         "color": {
             "r": 63,
             "g": 180,
@@ -6922,7 +6922,7 @@
     },
     {
         "label": "3145",
-        "name": "l-S_central",
+        "name": "wm-lh-S_central",
         "color": {
             "r": 221,
             "g": 20,
@@ -6931,7 +6931,7 @@
     },
     {
         "label": "3146",
-        "name": "l-S_central_insula",
+        "name": "wm-lh-S_central_insula",
         "color": {
             "r": 21,
             "g": 220,
@@ -6958,7 +6958,7 @@
     },
     {
         "label": "3149",
-        "name": "l-S_circular_insula_anterior",
+        "name": "wm-lh-S_circular_insula_anterior",
         "color": {
             "r": 221,
             "g": 60,
@@ -6967,7 +6967,7 @@
     },
     {
         "label": "3150",
-        "name": "l-S_circular_insula_inferior",
+        "name": "wm-lh-S_circular_insula_inferior",
         "color": {
             "r": 221,
             "g": 20,
@@ -6976,7 +6976,7 @@
     },
     {
         "label": "3151",
-        "name": "l-S_circular_insula_superior",
+        "name": "wm-lh-S_circular_insula_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -6985,7 +6985,7 @@
     },
     {
         "label": "3152",
-        "name": "l-S_collateral_transverse_ant",
+        "name": "wm-lh-S_collateral_transverse_ant",
         "color": {
             "r": 100,
             "g": 200,
@@ -6994,7 +6994,7 @@
     },
     {
         "label": "3153",
-        "name": "l-S_collateral_transverse_post",
+        "name": "wm-lh-S_collateral_transverse_post",
         "color": {
             "r": 10,
             "g": 200,
@@ -7003,7 +7003,7 @@
     },
     {
         "label": "3154",
-        "name": "l-S_frontal_inferior",
+        "name": "wm-lh-S_frontal_inferior",
         "color": {
             "r": 221,
             "g": 220,
@@ -7012,7 +7012,7 @@
     },
     {
         "label": "3155",
-        "name": "l-S_frontal_middle",
+        "name": "wm-lh-S_frontal_middle",
         "color": {
             "r": 141,
             "g": 20,
@@ -7021,7 +7021,7 @@
     },
     {
         "label": "3156",
-        "name": "l-S_frontal_superior",
+        "name": "wm-lh-S_frontal_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -7030,7 +7030,7 @@
     },
     {
         "label": "3157",
-        "name": "l-S_frontomarginal",
+        "name": "wm-lh-S_frontomarginal",
         "color": {
             "r": 21,
             "g": 220,
@@ -7057,7 +7057,7 @@
     },
     {
         "label": "3160",
-        "name": "l-S_occipital_anterior",
+        "name": "wm-lh-S_occipital_anterior",
         "color": {
             "r": 61,
             "g": 20,
@@ -7066,7 +7066,7 @@
     },
     {
         "label": "3161",
-        "name": "l-S_occipital_middle_and_Lunatus",
+        "name": "wm-lh-S_occipital_middle_and_Lunatus",
         "color": {
             "r": 101,
             "g": 60,
@@ -7075,7 +7075,7 @@
     },
     {
         "label": "3162",
-        "name": "l-S_occipital_superior_and_transversalis",
+        "name": "wm-lh-S_occipital_superior_and_transversalis",
         "color": {
             "r": 21,
             "g": 20,
@@ -7111,7 +7111,7 @@
     },
     {
         "label": "3166",
-        "name": "l-S_orbital_lateral",
+        "name": "wm-lh-S_orbital_lateral",
         "color": {
             "r": 221,
             "g": 100,
@@ -7129,7 +7129,7 @@
     },
     {
         "label": "3168",
-        "name": "l-S_paracentral",
+        "name": "wm-lh-S_paracentral",
         "color": {
             "r": 21,
             "g": 180,
@@ -7138,7 +7138,7 @@
     },
     {
         "label": "3169",
-        "name": "l-S_parieto_occipital",
+        "name": "wm-lh-S_parieto_occipital",
         "color": {
             "r": 101,
             "g": 100,
@@ -7147,7 +7147,7 @@
     },
     {
         "label": "3170",
-        "name": "l-S_pericallosal",
+        "name": "wm-lh-S_pericallosal",
         "color": {
             "r": 181,
             "g": 220,
@@ -7156,7 +7156,7 @@
     },
     {
         "label": "3171",
-        "name": "l-S_postcentral",
+        "name": "wm-lh-S_postcentral",
         "color": {
             "r": 21,
             "g": 140,
@@ -7183,7 +7183,7 @@
     },
     {
         "label": "3174",
-        "name": "l-S_subcentral_ant",
+        "name": "wm-lh-S_subcentral_ant",
         "color": {
             "r": 61,
             "g": 180,
@@ -7192,7 +7192,7 @@
     },
     {
         "label": "3175",
-        "name": "l-S_subcentral_post",
+        "name": "wm-lh-S_subcentral_post",
         "color": {
             "r": 61,
             "g": 180,
@@ -7201,7 +7201,7 @@
     },
     {
         "label": "3176",
-        "name": "l-S_suborbital",
+        "name": "wm-lh-S_suborbital",
         "color": {
             "r": 21,
             "g": 20,
@@ -7210,7 +7210,7 @@
     },
     {
         "label": "3177",
-        "name": "l-S_subparietal",
+        "name": "wm-lh-S_subparietal",
         "color": {
             "r": 101,
             "g": 60,
@@ -7219,7 +7219,7 @@
     },
     {
         "label": "3178",
-        "name": "l-S_supracingulate",
+        "name": "wm-lh-S_supracingulate",
         "color": {
             "r": 21,
             "g": 220,
@@ -7228,7 +7228,7 @@
     },
     {
         "label": "3179",
-        "name": "l-S_temporal_inferior",
+        "name": "wm-lh-S_temporal_inferior",
         "color": {
             "r": 21,
             "g": 180,
@@ -7237,7 +7237,7 @@
     },
     {
         "label": "3180",
-        "name": "l-S_temporal_superior",
+        "name": "wm-lh-S_temporal_superior",
         "color": {
             "r": 223,
             "g": 220,
@@ -7246,7 +7246,7 @@
     },
     {
         "label": "3181",
-        "name": "l-S_temporal_transverse",
+        "name": "wm-lh-S_temporal_transverse",
         "color": {
             "r": 221,
             "g": 60,
@@ -7255,7 +7255,7 @@
     },
     {
         "label": "4100",
-        "name": "r-Unknown",
+        "name": "wm-rh-Unknown",
         "color": {
             "r": 0,
             "g": 0,
@@ -7264,7 +7264,7 @@
     },
     {
         "label": "4101",
-        "name": "r-Corpus_callosum",
+        "name": "wm-rh-Corpus_callosum",
         "color": {
             "r": 50,
             "g": 50,
@@ -7273,7 +7273,7 @@
     },
     {
         "label": "4102",
-        "name": "r-G_and_S_Insula_ONLY_AVERAGE",
+        "name": "wm-rh-G_and_S_Insula_ONLY_AVERAGE",
         "color": {
             "r": 180,
             "g": 20,
@@ -7300,7 +7300,7 @@
     },
     {
         "label": "4105",
-        "name": "r-G_cuneus",
+        "name": "wm-rh-G_cuneus",
         "color": {
             "r": 180,
             "g": 20,
@@ -7336,7 +7336,7 @@
     },
     {
         "label": "4109",
-        "name": "r-G_frontal_middle",
+        "name": "wm-rh-G_frontal_middle",
         "color": {
             "r": 140,
             "g": 100,
@@ -7345,7 +7345,7 @@
     },
     {
         "label": "4110",
-        "name": "r-G_frontal_superior",
+        "name": "wm-rh-G_frontal_superior",
         "color": {
             "r": 180,
             "g": 20,
@@ -7354,7 +7354,7 @@
     },
     {
         "label": "4111",
-        "name": "r-G_frontomarginal",
+        "name": "wm-rh-G_frontomarginal",
         "color": {
             "r": 140,
             "g": 20,
@@ -7363,7 +7363,7 @@
     },
     {
         "label": "4112",
-        "name": "r-G_insular_long",
+        "name": "wm-rh-G_insular_long",
         "color": {
             "r": 21,
             "g": 10,
@@ -7372,7 +7372,7 @@
     },
     {
         "label": "4113",
-        "name": "r-G_insular_short",
+        "name": "wm-rh-G_insular_short",
         "color": {
             "r": 225,
             "g": 140,
@@ -7381,7 +7381,7 @@
     },
     {
         "label": "4114",
-        "name": "r-G_and_S_occipital_inferior",
+        "name": "wm-rh-G_and_S_occipital_inferior",
         "color": {
             "r": 23,
             "g": 60,
@@ -7390,7 +7390,7 @@
     },
     {
         "label": "4115",
-        "name": "r-G_occipital_middle",
+        "name": "wm-rh-G_occipital_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -7399,7 +7399,7 @@
     },
     {
         "label": "4116",
-        "name": "r-G_occipital_superior",
+        "name": "wm-rh-G_occipital_superior",
         "color": {
             "r": 20,
             "g": 220,
@@ -7435,7 +7435,7 @@
     },
     {
         "label": "4120",
-        "name": "r-G_orbital",
+        "name": "wm-rh-G_orbital",
         "color": {
             "r": 220,
             "g": 60,
@@ -7444,7 +7444,7 @@
     },
     {
         "label": "4121",
-        "name": "r-G_paracentral",
+        "name": "wm-rh-G_paracentral",
         "color": {
             "r": 60,
             "g": 100,
@@ -7471,7 +7471,7 @@
     },
     {
         "label": "4124",
-        "name": "r-G_parietal_superior",
+        "name": "wm-rh-G_parietal_superior",
         "color": {
             "r": 220,
             "g": 180,
@@ -7480,7 +7480,7 @@
     },
     {
         "label": "4125",
-        "name": "r-G_postcentral",
+        "name": "wm-rh-G_postcentral",
         "color": {
             "r": 20,
             "g": 180,
@@ -7489,7 +7489,7 @@
     },
     {
         "label": "4126",
-        "name": "r-G_precentral",
+        "name": "wm-rh-G_precentral",
         "color": {
             "r": 60,
             "g": 140,
@@ -7498,7 +7498,7 @@
     },
     {
         "label": "4127",
-        "name": "r-G_precuneus",
+        "name": "wm-rh-G_precuneus",
         "color": {
             "r": 25,
             "g": 20,
@@ -7507,7 +7507,7 @@
     },
     {
         "label": "4128",
-        "name": "r-G_rectus",
+        "name": "wm-rh-G_rectus",
         "color": {
             "r": 20,
             "g": 60,
@@ -7516,7 +7516,7 @@
     },
     {
         "label": "4129",
-        "name": "r-G_subcallosal",
+        "name": "wm-rh-G_subcallosal",
         "color": {
             "r": 60,
             "g": 220,
@@ -7525,7 +7525,7 @@
     },
     {
         "label": "4130",
-        "name": "r-G_subcentral",
+        "name": "wm-rh-G_subcentral",
         "color": {
             "r": 60,
             "g": 20,
@@ -7534,7 +7534,7 @@
     },
     {
         "label": "4131",
-        "name": "r-G_temporal_inferior",
+        "name": "wm-rh-G_temporal_inferior",
         "color": {
             "r": 220,
             "g": 220,
@@ -7543,7 +7543,7 @@
     },
     {
         "label": "4132",
-        "name": "r-G_temporal_middle",
+        "name": "wm-rh-G_temporal_middle",
         "color": {
             "r": 180,
             "g": 60,
@@ -7588,7 +7588,7 @@
     },
     {
         "label": "4137",
-        "name": "r-G_and_S_transverse_frontopolar",
+        "name": "wm-rh-G_and_S_transverse_frontopolar",
         "color": {
             "r": 13,
             "g": 0,
@@ -7624,7 +7624,7 @@
     },
     {
         "label": "4141",
-        "name": "r-Medial_wall",
+        "name": "wm-rh-Medial_wall",
         "color": {
             "r": 25,
             "g": 25,
@@ -7633,7 +7633,7 @@
     },
     {
         "label": "4142",
-        "name": "r-Pole_occipital",
+        "name": "wm-rh-Pole_occipital",
         "color": {
             "r": 140,
             "g": 20,
@@ -7642,7 +7642,7 @@
     },
     {
         "label": "4143",
-        "name": "r-Pole_temporal",
+        "name": "wm-rh-Pole_temporal",
         "color": {
             "r": 220,
             "g": 180,
@@ -7651,7 +7651,7 @@
     },
     {
         "label": "4144",
-        "name": "r-S_calcarine",
+        "name": "wm-rh-S_calcarine",
         "color": {
             "r": 63,
             "g": 180,
@@ -7660,7 +7660,7 @@
     },
     {
         "label": "4145",
-        "name": "r-S_central",
+        "name": "wm-rh-S_central",
         "color": {
             "r": 221,
             "g": 20,
@@ -7669,7 +7669,7 @@
     },
     {
         "label": "4146",
-        "name": "r-S_central_insula",
+        "name": "wm-rh-S_central_insula",
         "color": {
             "r": 21,
             "g": 220,
@@ -7696,7 +7696,7 @@
     },
     {
         "label": "4149",
-        "name": "r-S_circular_insula_anterior",
+        "name": "wm-rh-S_circular_insula_anterior",
         "color": {
             "r": 221,
             "g": 60,
@@ -7705,7 +7705,7 @@
     },
     {
         "label": "4150",
-        "name": "r-S_circular_insula_inferior",
+        "name": "wm-rh-S_circular_insula_inferior",
         "color": {
             "r": 221,
             "g": 20,
@@ -7714,7 +7714,7 @@
     },
     {
         "label": "4151",
-        "name": "r-S_circular_insula_superior",
+        "name": "wm-rh-S_circular_insula_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -7723,7 +7723,7 @@
     },
     {
         "label": "4152",
-        "name": "r-S_collateral_transverse_ant",
+        "name": "wm-rh-S_collateral_transverse_ant",
         "color": {
             "r": 100,
             "g": 200,
@@ -7732,7 +7732,7 @@
     },
     {
         "label": "4153",
-        "name": "r-S_collateral_transverse_post",
+        "name": "wm-rh-S_collateral_transverse_post",
         "color": {
             "r": 10,
             "g": 200,
@@ -7741,7 +7741,7 @@
     },
     {
         "label": "4154",
-        "name": "r-S_frontal_inferior",
+        "name": "wm-rh-S_frontal_inferior",
         "color": {
             "r": 221,
             "g": 220,
@@ -7750,7 +7750,7 @@
     },
     {
         "label": "4155",
-        "name": "r-S_frontal_middle",
+        "name": "wm-rh-S_frontal_middle",
         "color": {
             "r": 141,
             "g": 20,
@@ -7759,7 +7759,7 @@
     },
     {
         "label": "4156",
-        "name": "r-S_frontal_superior",
+        "name": "wm-rh-S_frontal_superior",
         "color": {
             "r": 61,
             "g": 220,
@@ -7768,7 +7768,7 @@
     },
     {
         "label": "4157",
-        "name": "r-S_frontomarginal",
+        "name": "wm-rh-S_frontomarginal",
         "color": {
             "r": 21,
             "g": 220,
@@ -7795,7 +7795,7 @@
     },
     {
         "label": "4160",
-        "name": "r-S_occipital_anterior",
+        "name": "wm-rh-S_occipital_anterior",
         "color": {
             "r": 61,
             "g": 20,
@@ -7804,7 +7804,7 @@
     },
     {
         "label": "4161",
-        "name": "r-S_occipital_middle_and_Lunatus",
+        "name": "wm-rh-S_occipital_middle_and_Lunatus",
         "color": {
             "r": 101,
             "g": 60,
@@ -7813,7 +7813,7 @@
     },
     {
         "label": "4162",
-        "name": "r-S_occipital_superior_and_transversalis",
+        "name": "wm-rh-S_occipital_superior_and_transversalis",
         "color": {
             "r": 21,
             "g": 20,
@@ -7849,7 +7849,7 @@
     },
     {
         "label": "4166",
-        "name": "r-S_orbital_lateral",
+        "name": "wm-rh-S_orbital_lateral",
         "color": {
             "r": 221,
             "g": 100,
@@ -7867,7 +7867,7 @@
     },
     {
         "label": "4168",
-        "name": "r-S_paracentral",
+        "name": "wm-rh-S_paracentral",
         "color": {
             "r": 21,
             "g": 180,
@@ -7876,7 +7876,7 @@
     },
     {
         "label": "4169",
-        "name": "r-S_parieto_occipital",
+        "name": "wm-rh-S_parieto_occipital",
         "color": {
             "r": 101,
             "g": 100,
@@ -7885,7 +7885,7 @@
     },
     {
         "label": "4170",
-        "name": "r-S_pericallosal",
+        "name": "wm-rh-S_pericallosal",
         "color": {
             "r": 181,
             "g": 220,
@@ -7894,7 +7894,7 @@
     },
     {
         "label": "4171",
-        "name": "r-S_postcentral",
+        "name": "wm-rh-S_postcentral",
         "color": {
             "r": 21,
             "g": 140,
@@ -7921,7 +7921,7 @@
     },
     {
         "label": "4174",
-        "name": "r-S_subcentral_ant",
+        "name": "wm-rh-S_subcentral_ant",
         "color": {
             "r": 61,
             "g": 180,
@@ -7930,7 +7930,7 @@
     },
     {
         "label": "4175",
-        "name": "r-S_subcentral_post",
+        "name": "wm-rh-S_subcentral_post",
         "color": {
             "r": 61,
             "g": 180,
@@ -7939,7 +7939,7 @@
     },
     {
         "label": "4176",
-        "name": "r-S_suborbital",
+        "name": "wm-rh-S_suborbital",
         "color": {
             "r": 21,
             "g": 20,
@@ -7948,7 +7948,7 @@
     },
     {
         "label": "4177",
-        "name": "r-S_subparietal",
+        "name": "wm-rh-S_subparietal",
         "color": {
             "r": 101,
             "g": 60,
@@ -7957,7 +7957,7 @@
     },
     {
         "label": "4178",
-        "name": "r-S_supracingulate",
+        "name": "wm-rh-S_supracingulate",
         "color": {
             "r": 21,
             "g": 220,
@@ -7966,7 +7966,7 @@
     },
     {
         "label": "4179",
-        "name": "r-S_temporal_inferior",
+        "name": "wm-rh-S_temporal_inferior",
         "color": {
             "r": 21,
             "g": 180,
@@ -7975,7 +7975,7 @@
     },
     {
         "label": "4180",
-        "name": "r-S_temporal_superior",
+        "name": "wm-rh-S_temporal_superior",
         "color": {
             "r": 223,
             "g": 220,
@@ -7984,7 +7984,7 @@
     },
     {
         "label": "4181",
-        "name": "r-S_temporal_transverse",
+        "name": "wm-rh-S_temporal_transverse",
         "color": {
             "r": 221,
             "g": 60,
@@ -8506,7 +8506,7 @@
     },
     {
         "label": "7008",
-        "name": "B-nucleus",
+        "name": "Accessory-Basal-nucleus",
         "color": {
             "r": 232,
             "g": 146,
@@ -8623,7 +8623,7 @@
     },
     {
         "label": "7100",
-        "name": "i-colliculus",
+        "name": "Brainstem-inferior-colliculus",
         "color": {
             "r": 42,
             "g": 201,
@@ -8632,7 +8632,7 @@
     },
     {
         "label": "7101",
-        "name": "c-nucleus",
+        "name": "Brainstem-cochlear-nucleus",
         "color": {
             "r": 168,
             "g": 104,
@@ -8650,7 +8650,7 @@
     },
     {
         "label": "8002",
-        "name": "V-anterior",
+        "name": "Thalamus-Ventral-anterior",
         "color": {
             "r": 242,
             "g": 241,
@@ -8659,7 +8659,7 @@
     },
     {
         "label": "8003",
-        "name": "L-dorsal",
+        "name": "Thalamus-Lateral-dorsal",
         "color": {
             "r": 206,
             "g": 65,
@@ -8668,7 +8668,7 @@
     },
     {
         "label": "8004",
-        "name": "L-posterior",
+        "name": "Thalamus-Lateral-posterior",
         "color": {
             "r": 120,
             "g": 21,
@@ -8677,7 +8677,7 @@
     },
     {
         "label": "8005",
-        "name": "V-lateral",
+        "name": "Thalamus-Ventral-lateral",
         "color": {
             "r": 195,
             "g": 61,
@@ -8749,7 +8749,7 @@
     },
     {
         "label": "8013",
-        "name": "l-geniculate",
+        "name": "Thalamus-lateral-geniculate",
         "color": {
             "r": 203,
             "g": 182,
@@ -8758,7 +8758,7 @@
     },
     {
         "label": "8014",
-        "name": "m-geniculate",
+        "name": "Thalamus-medial-geniculate",
         "color": {
             "r": 42,
             "g": 204,
@@ -8767,7 +8767,7 @@
     },
     {
         "label": "9000",
-        "name": "l-prefrontal",
+        "name": "ctx-lh-prefrontal",
         "color": {
             "r": 50,
             "g": 100,
@@ -8785,7 +8785,7 @@
     },
     {
         "label": "9002",
-        "name": "l-premotor",
+        "name": "ctx-lh-premotor",
         "color": {
             "r": 130,
             "g": 100,
@@ -8794,7 +8794,7 @@
     },
     {
         "label": "9003",
-        "name": "l-temporal",
+        "name": "ctx-lh-temporal",
         "color": {
             "r": 105,
             "g": 25,
@@ -8821,7 +8821,7 @@
     },
     {
         "label": "9006",
-        "name": "l-occipital",
+        "name": "ctx-lh-occipital",
         "color": {
             "r": 225,
             "g": 20,
@@ -8830,7 +8830,7 @@
     },
     {
         "label": "9500",
-        "name": "r-prefrontal",
+        "name": "ctx-rh-prefrontal",
         "color": {
             "r": 50,
             "g": 200,
@@ -8848,7 +8848,7 @@
     },
     {
         "label": "9502",
-        "name": "r-premotor",
+        "name": "ctx-rh-premotor",
         "color": {
             "r": 130,
             "g": 150,
@@ -8857,7 +8857,7 @@
     },
     {
         "label": "9503",
-        "name": "r-temporal",
+        "name": "ctx-rh-temporal",
         "color": {
             "r": 105,
             "g": 75,
@@ -8884,7 +8884,7 @@
     },
     {
         "label": "9506",
-        "name": "r-occipital",
+        "name": "ctx-rh-occipital",
         "color": {
             "r": 225,
             "g": 70,
@@ -8956,7 +8956,7 @@
     },
     {
         "label": "11107",
-        "name": "M-Ant",
+        "name": "ctx_lh_G_and_S_cingul-Mid-Ant",
         "color": {
             "r": 26,
             "g": 60,
@@ -8965,7 +8965,7 @@
     },
     {
         "label": "11108",
-        "name": "M-Post",
+        "name": "ctx_lh_G_and_S_cingul-Mid-Post",
         "color": {
             "r": 26,
             "g": 60,
@@ -8974,7 +8974,7 @@
     },
     {
         "label": "11109",
-        "name": "P-dorsal",
+        "name": "ctx_lh_G_cingul-Post-dorsal",
         "color": {
             "r": 25,
             "g": 60,
@@ -8983,7 +8983,7 @@
     },
     {
         "label": "11110",
-        "name": "P-ventral",
+        "name": "ctx_lh_G_cingul-Post-ventral",
         "color": {
             "r": 60,
             "g": 25,
@@ -9082,7 +9082,7 @@
     },
     {
         "label": "11121",
-        "name": "t-fusifor",
+        "name": "ctx_lh_G_oc-temp_lat-fusifor",
         "color": {
             "r": 60,
             "g": 20,
@@ -9091,7 +9091,7 @@
     },
     {
         "label": "11122",
-        "name": "t-Lingual",
+        "name": "ctx_lh_G_oc-temp_med-Lingual",
         "color": {
             "r": 220,
             "g": 180,
@@ -9100,7 +9100,7 @@
     },
     {
         "label": "11123",
-        "name": "t-Parahip",
+        "name": "ctx_lh_G_oc-temp_med-Parahip",
         "color": {
             "r": 65,
             "g": 100,
@@ -9244,7 +9244,7 @@
     },
     {
         "label": "11139",
-        "name": "a-Horizont",
+        "name": "ctx_lh_Lat_Fis-ant-Horizont",
         "color": {
             "r": 61,
             "g": 20,
@@ -9253,7 +9253,7 @@
     },
     {
         "label": "11140",
-        "name": "a-Vertical",
+        "name": "ctx_lh_Lat_Fis-ant-Vertical",
         "color": {
             "r": 61,
             "g": 20,
@@ -9514,7 +9514,7 @@
     },
     {
         "label": "11169",
-        "name": "i-part",
+        "name": "ctx_lh_S_precentral-inf-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -9523,7 +9523,7 @@
     },
     {
         "label": "11170",
-        "name": "s-part",
+        "name": "ctx_lh_S_precentral-sup-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -9640,7 +9640,7 @@
     },
     {
         "label": "12107",
-        "name": "M-Ant",
+        "name": "ctx_rh_G_and_S_cingul-Mid-Ant",
         "color": {
             "r": 26,
             "g": 60,
@@ -9649,7 +9649,7 @@
     },
     {
         "label": "12108",
-        "name": "M-Post",
+        "name": "ctx_rh_G_and_S_cingul-Mid-Post",
         "color": {
             "r": 26,
             "g": 60,
@@ -9658,7 +9658,7 @@
     },
     {
         "label": "12109",
-        "name": "P-dorsal",
+        "name": "ctx_rh_G_cingul-Post-dorsal",
         "color": {
             "r": 25,
             "g": 60,
@@ -9667,7 +9667,7 @@
     },
     {
         "label": "12110",
-        "name": "P-ventral",
+        "name": "ctx_rh_G_cingul-Post-ventral",
         "color": {
             "r": 60,
             "g": 25,
@@ -9766,7 +9766,7 @@
     },
     {
         "label": "12121",
-        "name": "t-fusifor",
+        "name": "ctx_rh_G_oc-temp_lat-fusifor",
         "color": {
             "r": 60,
             "g": 20,
@@ -9775,7 +9775,7 @@
     },
     {
         "label": "12122",
-        "name": "t-Lingual",
+        "name": "ctx_rh_G_oc-temp_med-Lingual",
         "color": {
             "r": 220,
             "g": 180,
@@ -9784,7 +9784,7 @@
     },
     {
         "label": "12123",
-        "name": "t-Parahip",
+        "name": "ctx_rh_G_oc-temp_med-Parahip",
         "color": {
             "r": 65,
             "g": 100,
@@ -9928,7 +9928,7 @@
     },
     {
         "label": "12139",
-        "name": "a-Horizont",
+        "name": "ctx_rh_Lat_Fis-ant-Horizont",
         "color": {
             "r": 61,
             "g": 20,
@@ -9937,7 +9937,7 @@
     },
     {
         "label": "12140",
-        "name": "a-Vertical",
+        "name": "ctx_rh_Lat_Fis-ant-Vertical",
         "color": {
             "r": 61,
             "g": 20,
@@ -10198,7 +10198,7 @@
     },
     {
         "label": "12169",
-        "name": "i-part",
+        "name": "ctx_rh_S_precentral-inf-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -10207,7 +10207,7 @@
     },
     {
         "label": "12170",
-        "name": "s-part",
+        "name": "ctx_rh_S_precentral-sup-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -10324,7 +10324,7 @@
     },
     {
         "label": "13107",
-        "name": "M-Ant",
+        "name": "wm_lh_G_and_S_cingul-Mid-Ant",
         "color": {
             "r": 26,
             "g": 60,
@@ -10333,7 +10333,7 @@
     },
     {
         "label": "13108",
-        "name": "M-Post",
+        "name": "wm_lh_G_and_S_cingul-Mid-Post",
         "color": {
             "r": 26,
             "g": 60,
@@ -10342,7 +10342,7 @@
     },
     {
         "label": "13109",
-        "name": "P-dorsal",
+        "name": "wm_lh_G_cingul-Post-dorsal",
         "color": {
             "r": 25,
             "g": 60,
@@ -10351,7 +10351,7 @@
     },
     {
         "label": "13110",
-        "name": "P-ventral",
+        "name": "wm_lh_G_cingul-Post-ventral",
         "color": {
             "r": 60,
             "g": 25,
@@ -10450,7 +10450,7 @@
     },
     {
         "label": "13121",
-        "name": "t-fusifor",
+        "name": "wm_lh_G_oc-temp_lat-fusifor",
         "color": {
             "r": 60,
             "g": 20,
@@ -10459,7 +10459,7 @@
     },
     {
         "label": "13122",
-        "name": "t-Lingual",
+        "name": "wm_lh_G_oc-temp_med-Lingual",
         "color": {
             "r": 220,
             "g": 180,
@@ -10468,7 +10468,7 @@
     },
     {
         "label": "13123",
-        "name": "t-Parahip",
+        "name": "wm_lh_G_oc-temp_med-Parahip",
         "color": {
             "r": 65,
             "g": 100,
@@ -10612,7 +10612,7 @@
     },
     {
         "label": "13139",
-        "name": "a-Horizont",
+        "name": "wm_lh_Lat_Fis-ant-Horizont",
         "color": {
             "r": 61,
             "g": 20,
@@ -10621,7 +10621,7 @@
     },
     {
         "label": "13140",
-        "name": "a-Vertical",
+        "name": "wm_lh_Lat_Fis-ant-Vertical",
         "color": {
             "r": 61,
             "g": 20,
@@ -10882,7 +10882,7 @@
     },
     {
         "label": "13169",
-        "name": "i-part",
+        "name": "wm_lh_S_precentral-inf-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -10891,7 +10891,7 @@
     },
     {
         "label": "13170",
-        "name": "s-part",
+        "name": "wm_lh_S_precentral-sup-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -11008,7 +11008,7 @@
     },
     {
         "label": "14107",
-        "name": "M-Ant",
+        "name": "wm_rh_G_and_S_cingul-Mid-Ant",
         "color": {
             "r": 26,
             "g": 60,
@@ -11017,7 +11017,7 @@
     },
     {
         "label": "14108",
-        "name": "M-Post",
+        "name": "wm_rh_G_and_S_cingul-Mid-Post",
         "color": {
             "r": 26,
             "g": 60,
@@ -11026,7 +11026,7 @@
     },
     {
         "label": "14109",
-        "name": "P-dorsal",
+        "name": "wm_rh_G_cingul-Post-dorsal",
         "color": {
             "r": 25,
             "g": 60,
@@ -11035,7 +11035,7 @@
     },
     {
         "label": "14110",
-        "name": "P-ventral",
+        "name": "wm_rh_G_cingul-Post-ventral",
         "color": {
             "r": 60,
             "g": 25,
@@ -11134,7 +11134,7 @@
     },
     {
         "label": "14121",
-        "name": "t-fusifor",
+        "name": "wm_rh_G_oc-temp_lat-fusifor",
         "color": {
             "r": 60,
             "g": 20,
@@ -11143,7 +11143,7 @@
     },
     {
         "label": "14122",
-        "name": "t-Lingual",
+        "name": "wm_rh_G_oc-temp_med-Lingual",
         "color": {
             "r": 220,
             "g": 180,
@@ -11152,7 +11152,7 @@
     },
     {
         "label": "14123",
-        "name": "t-Parahip",
+        "name": "wm_rh_G_oc-temp_med-Parahip",
         "color": {
             "r": 65,
             "g": 100,
@@ -11296,7 +11296,7 @@
     },
     {
         "label": "14139",
-        "name": "a-Horizont",
+        "name": "wm_rh_Lat_Fis-ant-Horizont",
         "color": {
             "r": 61,
             "g": 20,
@@ -11305,7 +11305,7 @@
     },
     {
         "label": "14140",
-        "name": "a-Vertical",
+        "name": "wm_rh_Lat_Fis-ant-Vertical",
         "color": {
             "r": 61,
             "g": 20,
@@ -11566,7 +11566,7 @@
     },
     {
         "label": "14169",
-        "name": "i-part",
+        "name": "wm_rh_S_precentral-inf-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -11575,7 +11575,7 @@
     },
     {
         "label": "14170",
-        "name": "s-part",
+        "name": "wm_rh_S_precentral-sup-part",
         "color": {
             "r": 21,
             "g": 20,
@@ -11628,4 +11628,3 @@
         }
     }
 ]
-}

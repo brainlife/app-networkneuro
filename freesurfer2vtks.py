@@ -31,7 +31,7 @@ for i in range(0, vtk_data.GetSize()):
 
 index=[]
 
-for label in labels["labels"]:
+for label in labels:
     label_id=int(label["label"])
 
     #only handle some surfaces
