@@ -1,6 +1,6 @@
 #!/usr/bin/node 
 const fs = require('fs');
-const fslabels = fs.readFileSync("FreeSurferColorLUT.txt","ascii");
+const fslabels = fs.readFileSync(process.env["FREESURFER_HOME"]+"/FreeSurferColorLUT.txt","ascii");
 
 let labels = [];
 fslabels.split("\n").forEach(line=>{

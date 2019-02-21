@@ -1,11 +1,10 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import vtk
 import sys
 import os
 import json
 import pandas as pd
-from sets import Set
 
 if not os.path.exists("surfaces"):
    os.makedirs("surfaces")
@@ -24,7 +23,7 @@ reader.Update()
 print("list unique values (super slow!)")
 out = reader.GetOutput()
 vtk_data=out.GetPointData().GetScalars()
-unique = Set()
+unique = set()
 for i in range(0, vtk_data.GetSize()):
     v = vtk_data.GetValue(i)
     unique.add(v)
@@ -37,7 +36,7 @@ for label in labels:
     #only handle some surfaces
     #if label_id < 1000 or label_id > 2036:
     #    continue
-    if not unique.__contains__(label_id):
+    if not label_id in unique:
         continue
 
     surf_name=label['label']+'.'+label['name']+'.vtk'
