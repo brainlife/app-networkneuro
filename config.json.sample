@@ -1,0 +1,4 @@
+{
+"fsdir": "testdata/freesurfer/output",
+"fe": "testdata/life/output_fe.mat"
+}

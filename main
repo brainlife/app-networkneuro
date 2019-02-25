@@ -4,17 +4,14 @@
 #PBS -N networkneuro
 
 set -e
+set -x
 
-## parse argument for path to file
 export fsdir=`jq -r '.fsdir' config.json`
 
 [ -z "$FREESURFER_LICENSE" ] && echo "Please set FREESURFER_LICENSE in .bashrc" && exit 1;
 
-## run file conversion shell
-#singularity exec -e docker://brainlife/freesurfer ./preprocess.sh
 time singularity exec --writable -e docker://brainlife/freesurfer:6.0.0 bash -c "echo $FREESURFER_LICENSE > /usr/local/freesurfer/license.txt && mri_convert $fsdir/mri/aparc+aseg.mgz --out_orientation RAS aparc+aseg.nii.gz"
 
-## run main
 time singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiled/main
 
 echo "Network Pipeline Complete"
@@ -24,3 +21,7 @@ then
     echo "output missing"
     exit 1
 fi
+
+echo "Generating surfaces/ vtk from aparc+aseg.mgz"
+time singularity exec -e docker://brainlife/docker-pythonvtk ./freesurfer2vtks.py 
+
