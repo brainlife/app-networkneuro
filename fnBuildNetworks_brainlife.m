@@ -66,6 +66,9 @@ pool = parpool(clust, nclust, 'IdleTimeout', 120);
 
 clear tmpdir OK
 
+%% create viz output
+mkdir('networkneuro-tracts');
+
 %% create networks
 
 % assign streamline endpoints to labeled volume
@@ -85,6 +88,9 @@ pconn = feVirtualLesionPairedConnections(pconn, 'nzw', M, fascicle_weights, meas
 % combine outputs and labels into 1 matrix
 omat = cat(3, amat, nmat);
 olab = [ alab; nlab ];
+
+% create visualization
+[ jout, ofib ] = fnEdgesToJson(pconn, fg, 'networkneuro-tracts');
 
 % remove parallel pool
 delete(pool);
