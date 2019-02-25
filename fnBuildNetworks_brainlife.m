@@ -67,7 +67,7 @@ pool = parpool(clust, nclust, 'IdleTimeout', 120);
 clear tmpdir OK
 
 %% create viz output
-mkdir('networkneuro-tracts');
+mkdir('roipairs');
 
 %% create networks
 
