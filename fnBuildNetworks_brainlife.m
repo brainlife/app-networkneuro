@@ -90,7 +90,7 @@ omat = cat(3, amat, nmat);
 olab = [ alab; nlab ];
 
 % create visualization
-[ jout, ofib ] = fnEdgesToJson(pconn, fg, 'networkneuro-tracts');
+[ jout, ofib ] = fnEdgesToJson(pconn, fg, 'roipairs');
 
 % remove parallel pool
 delete(pool);
