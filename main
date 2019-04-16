@@ -23,5 +23,5 @@ then
 fi
 
 echo "Generating surfaces/ vtk from aparc+aseg.mgz"
-time singularity exec -e docker://brainlife/docker-pythonvtk ./freesurfer2vtks.py 
+time singularity exec -e docker://brainlife/pythonvtk:1.1 ./freesurfer2vtks.py 
 
