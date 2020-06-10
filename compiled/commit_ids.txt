@@ -1,0 +1,19 @@
+/N/u/brlife/git/jsonlab
+commit 31eabbaab227d500786aaa472b9f5bbd9f082c61
+Author: Qianqian Fang <fangqq@gmail.com>
+Date:   Tue Aug 20 12:20:38 2019 -0400
+
+    fix table transpose issue for uniform type tables
+/N/soft/mason/SPM/spm8
+/N/u/hayashis/git/vistasoft
+commit dd1b242d110f5748e64aae82de6604109b016434
+Author: Soichi Hayashi <hayashis@iu.edu>
+Date:   Thu Apr 23 20:36:14 2020 +0000
+
+    fixed typo
+/N/u/brlife/git/encode
+commit 034825b0c304679d36c41906dfb4c9850cb64eae
+Author: francopestilli <frakkopesto@gmail.com>
+Date:   Sun Mar 1 15:25:30 2020 -0500
+
+    BUG: Fixed a size error in one of the calls. This was the result of the previous commit.
