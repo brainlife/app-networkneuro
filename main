@@ -1,9 +1,7 @@
 #!/bin/bash
-#PBS -l nodes=1:ppn=8,vmem=31gb
+#PBS -l nodes=1:ppn=8,vmem=58gb
 #PBS -l walltime=10:00:00
 #PBS -N networkneuro
-
-
 
 [ -z "$FREESURFER_LICENSE" ] && echo "Please set FREESURFER_LICENSE in .bashrc" && exit 1;
 echo $FREESURFER_LICENSE > license.txt
