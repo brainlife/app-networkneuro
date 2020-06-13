@@ -9,8 +9,8 @@ true > $log
 echo "/N/u/brlife/git/jsonlab" >> $log
 (cd /N/u/brlife/git/jsonlab && git log -1) >> $log
 
-echo "/N/soft/mason/SPM/spm8" >> $log
-(cd /N/soft/mason/SPM/spm8 && git log -1) >> $log
+#echo "/N/soft/mason/SPM/spm8" >> $log
+#(cd /N/soft/mason/SPM/spm8 && git log -1) >> $log
 
 echo "/N/u/hayashis/git/vistasoft" >> $log
 (cd /N/u/hayashis/git/vistasoft && git log -1) >> $log
@@ -18,14 +18,17 @@ echo "/N/u/hayashis/git/vistasoft" >> $log
 echo "/N/u/brlife/git/encode" >> $log
 (cd /N/u/brlife/git/encode && git log -1) >> $log
 
-#echo "/N/u/brlife/git/fine" >> $log
-#(cd /N/u/brlife/git/fine && git log -1) >> $log
+echo "/N/u/brlife/git/fine" >> $log
+(cd /N/u/brlife/git/fine && git log -1) >> $log
+
+echo "buidling build.m"
 
 cat > build.m <<END
 addpath(genpath('/N/u/brlife/git/vistasoft'))
 addpath(genpath('/N/soft/mason/SPM/spm8'))
 addpath(genpath('/N/u/brlife/git/jsonlab'))
 addpath(genpath('/N/u/brlife/git/encode'))
+addpath(genpath('/N/u/brlife/git/fine'))
 mcc -m -R -nodisplay -d compiled main
 exit
 END

@@ -4,7 +4,6 @@ Author: Qianqian Fang <fangqq@gmail.com>
 Date:   Tue Aug 20 12:20:38 2019 -0400
 
     fix table transpose issue for uniform type tables
-/N/soft/mason/SPM/spm8
 /N/u/hayashis/git/vistasoft
 commit dd1b242d110f5748e64aae82de6604109b016434
 Author: Soichi Hayashi <hayashis@iu.edu>
@@ -17,3 +16,9 @@ Author: francopestilli <frakkopesto@gmail.com>
 Date:   Sun Mar 1 15:25:30 2020 -0500
 
     BUG: Fixed a size error in one of the calls. This was the result of the previous commit.
+/N/u/brlife/git/fine
+commit 828ece50d917cfd19d2f63763b4a3508b7078b9a
+Author: bcmcpher <bcmcpher@iu.edu>
+Date:   Sun Dec 8 03:00:55 2019 -0500
+
+    fixed module density, intial fxn for determining module significance
