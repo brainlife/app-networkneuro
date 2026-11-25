@@ -3,6 +3,27 @@
 
 # app-networkneuro
 
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+**Builds structural connectivity matrices from a LiFE-evaluated tractogram and the FreeSurfer aparc+aseg parcellation with the FiNE toolbox, weighted by streamline density and virtual lesion strength.**
+
+Converts the FreeSurfer aparc+aseg to NIfTI, assigns the LiFE-weighted streamlines to region pairs and computes connectivity matrices weighted by streamline density (corrected for ROI size) and by virtual lesion evidence, saving them as CSV and MAT files with region surfaces (VTK) for visualisation. Use it to obtain structural networks when a LiFE model has been fit to the tractography; it needs a FreeSurfer output and a LiFE output from the same subject.
+
+Run it on brainlife.io: [https://doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47)
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `freesurfer` | `neuro/freesurfer` | yes | FreeSurfer output; its aparc+aseg parcellation defines the network nodes. |
+| `life` | `neuro/LiFE` | yes | Fitted LiFE model (fe structure) with streamline weights for the tractogram. |
+
+| Output | Datatype | Description |
+|---|---|---|
+| `fine` | `neuro/networkneuro` | networkneuro output: connectivity matrices (CSV) weighted by streamline density and virtual lesion, intermediate MAT files and node surfaces for visualisation. |
+
+Runtime: container `brainlife/freesurfer:6.0.0`; 8 CPUs; 58 GB memory; needs `FREESURFER_LICENSE`.
+
+<!-- brainlife-app:end -->
+
 This service cconnecitity matrices using the FreeSurfer output and LiFE output. It uses the FiNE toolbox to create these results, which is distributed as part of the LiFE code. This generates and reports two matrices 
 
 This app takes as inputs a brainlife FreeSurfer output and a brainlife LiFE output and combines them to create a brainlife networkneuro output. The network neuro output consists of a pair of connectivity matrices generated from the Desikan-Killiany (aparc+aseg) cortical labels and the intermediary data created in MATLAB stored as .mat files. The input requirements should ensure that the FreeSurfer output and LiFE output are in alignment. The LiFE output contains the streamlines that have been evaluated with the LiFE algorithm and contains the fiber evaluation (fe) structure that has been previously estimated. The FreeSurfer output is used to create and extract the cortical labels (nodes) to group the streamlines (edges) to create a network structure for evaluation.
