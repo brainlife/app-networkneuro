@@ -10,9 +10,9 @@
   <a href="https://github.com/brainlife/app-networkneuro/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT license"></a>
 </p>
 
-> 📍 **This branch, `1.3`, is the brainlife.io App Network Neuro** ([doi:10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47)).
+> **This branch, `1.3`, is the brainlife.io App Network Neuro** ([doi:10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47)).
 
-## 🧠 At a glance
+## At a glance
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
@@ -22,21 +22,21 @@ Converts the FreeSurfer aparc+aseg to NIfTI, assigns the LiFE-weighted streamlin
 
 | | |
 |---|---|
-| 📥 **Inputs** | `neuro/freesurfer` · `neuro/LiFE` |
-| 📤 **Outputs** | `neuro/networkneuro` |
-| 🐳 **Container** | `brainlife/freesurfer:6.0.0` |
-| ⚙️ **Resources** | 8 CPUs · 58 GB memory |
-| 🔑 **Requires** | `FREESURFER_LICENSE` |
-| 🔗 **Run it** | [doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47) |
+| **Inputs** | `neuro/freesurfer` · `neuro/LiFE` |
+| **Outputs** | `neuro/networkneuro` |
+| **Container** | `brainlife/freesurfer:6.0.0` |
+| **Resources** | 8 CPUs · 58 GB memory |
+| **Requires** | `FREESURFER_LICENSE` |
+| **Run it** | [doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47) |
 
-#### 📥 Inputs
+#### Inputs
 
 | Input | Datatype | Required | Description |
 |---|---|---|---|
 | `freesurfer` | `neuro/freesurfer` | yes | FreeSurfer output; its aparc+aseg parcellation defines the network nodes. |
 | `life` | `neuro/LiFE` | yes | Fitted LiFE model (fe structure) with streamline weights for the tractogram. |
 
-#### 📤 Outputs
+#### Outputs
 
 | Output | Datatype | Description |
 |---|---|---|
@@ -44,9 +44,9 @@ Converts the FreeSurfer aparc+aseg to NIfTI, assigns the LiFE-weighted streamlin
 
 <!-- brainlife-app:end -->
 
-## 🚀 Running the App
+## Running the App
 
-### ☁️ On brainlife.io
+### On brainlife.io
 
 Open the App at [doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47), choose a `neuro/freesurfer` output and a `neuro/LiFE` output of the same subject, and press **Execute**. The inputs must be in alignment: the LiFE output holds the streamlines evaluated with LiFE and the fitted fibre evaluation (`fe`) structure, and the FreeSurfer output provides the cortical labels (nodes) used to group the streamlines (edges) into a network.
 
@@ -57,7 +57,7 @@ The App uses the FiNE toolbox, distributed as part of the LiFE code, to build tw
 
 The result is a `neuro/networkneuro` dataset. The connectivity matrices are stored as CSV files; the intermediate MATLAB files can be used by further pipelines and are needed for debugging.
 
-### 💻 Locally
+### Locally
 
 You need [Singularity/Apptainer](https://apptainer.org/), [`jq`](https://jqlang.github.io/jq/) and a [FreeSurfer license](https://surfer.nmr.mgh.harvard.edu/registration.html). FreeSurfer 6.0.0, the compiled MATLAB code (MATLAB Runtime R2017a) and a Python VTK environment run inside containers.
 
@@ -78,7 +78,7 @@ You need [Singularity/Apptainer](https://apptainer.org/), [`jq`](https://jqlang.
    ./main
    ```
 
-### 🧪 Sample data
+### Sample data
 
 Download a sample FreeSurfer and LiFE output from brainlife.io with the [brainlife CLI](https://github.com/brainlife/cli):
 
@@ -90,7 +90,7 @@ bl dataset download 5a0e604116e499548135de87 && mv 5a0e604116e499548135de87 inpu
 bl dataset download 5a0dcb1216e499548135dd27 && mv 5a0dcb1216e499548135dd27 input/life/output_fe.mat
 ```
 
-## 📦 Outputs
+## Outputs
 
 ```text
 output/
@@ -184,12 +184,12 @@ The App also writes region surfaces (VTK) for visualisation on brainlife.io. All
 
 </details>
 
-## 🩺 Troubleshooting
+## Troubleshooting
 
 - **`output missing`**: `output/pconn.mat` was not produced. Check that the LiFE and FreeSurfer inputs come from the same subject and are aligned.
 - **`Please set FREESURFER_LICENSE in .bashrc`**: export the contents of your FreeSurfer `license.txt` as `FREESURFER_LICENSE` before running `./main`.
 
-## 📚 Citing
+## Citing
 
 > [!TIP]
 > If you use this App in your work, please cite the App, the software it builds on and brainlife.io (below). GitHub's **Cite this repository** button gives the App citation in APA and BibTeX.
@@ -204,7 +204,7 @@ The App also writes region surfaces (VTK) for visualisation on brainlife.io. All
 - Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. *Nature Methods* 21:809–813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
 - Avesani P, McPherson B, Hayashi S, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. *Scientific Data* 6:69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
 
-## 👥 Authors
+## Authors
 
 - Franco Pestilli (project director)
 - Brent McPherson
@@ -213,7 +213,7 @@ The App also writes region surfaces (VTK) for visualisation on brainlife.io. All
 
 The App builds on [vistasoft](https://github.com/vistalab/vistasoft), [encode](https://github.com/brain-life/encode) and [MBA](https://github.com/francopestilli/mba).
 
-## 💰 Funding
+## Funding
 
 [![Wellcome-226486/Z/22/Z](https://img.shields.io/badge/Wellcome-226486%2FZ%2F22%2FZ-purple.svg)](https://wellcome.org/)
 [![NIH-NINDS-U24NS140384](https://img.shields.io/badge/NIH_NINDS-U24NS140384-green.svg)](https://reporter.nih.gov/project-details/11261037)
@@ -232,6 +232,6 @@ The App builds on [vistasoft](https://github.com/vistalab/vistasoft), [encode](h
 
 <sub>brainlife.io is publicly funded, and acknowledging that support helps keep it running. This App was developed with support from Wellcome, the U.S. National Institutes of Health (including the BRAIN Initiative BRAIN CONNECTS program: The Axonal Projectome EXchange, U24NS140384, and the Center for Mesoscale Connectomics, UM1NS132207) and the U.S. National Science Foundation.</sub>
 
-## ⚖️ License
+## License
 
 [MIT](https://github.com/brainlife/app-networkneuro/blob/master/LICENSE). FreeSurfer itself is distributed under its own [license](https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferSoftwareLicense).
