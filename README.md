@@ -1,121 +1,115 @@
-[![Abcdspec-compliant](https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg)](https://github.com/brain-life/abcd-spec)
-[![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.v1.0-blue.svg)](https://doi.org/10.25663/bl.app.47)
+<h1 align="center">Network Neuro</h1>
 
-# app-networkneuro
+<p align="center">
+  Structural connectivity matrices weighted by streamline density and LiFE virtual-lesion evidence, from a LiFE-evaluated tractogram and the FreeSurfer Desikan-Killiany parcellation.
+</p>
+
+<p align="center">
+  <a href="https://github.com/brainlife/abcd-spec"><img src="https://img.shields.io/badge/ABCD_Spec-v1.1-green.svg" alt="ABCD Spec v1.1"></a>
+  <a href="https://doi.org/10.25663/bl.app.47"><img src="https://img.shields.io/badge/Brainlife-bl.app.47-blue.svg" alt="Run on brainlife.io"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT license"></a>
+</p>
+
+## 🧠 At a glance
 
 <!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
 
-**Builds structural connectivity matrices from a LiFE-evaluated tractogram and the FreeSurfer aparc+aseg parcellation with the FiNE toolbox, weighted by streamline density and virtual lesion strength.**
+> **Builds structural connectivity matrices from a LiFE-evaluated tractogram and the FreeSurfer aparc+aseg parcellation with the FiNE toolbox, weighted by streamline density and virtual lesion strength.**
 
 Converts the FreeSurfer aparc+aseg to NIfTI, assigns the LiFE-weighted streamlines to region pairs and computes connectivity matrices weighted by streamline density (corrected for ROI size) and by virtual lesion evidence, saving them as CSV and MAT files with region surfaces (VTK) for visualisation. Use it to obtain structural networks when a LiFE model has been fit to the tractography; it needs a FreeSurfer output and a LiFE output from the same subject.
 
-Run it on brainlife.io: [https://doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47)
+| | |
+|---|---|
+| 📥 **Inputs** | `neuro/freesurfer` · `neuro/LiFE` |
+| 📤 **Outputs** | `neuro/networkneuro` |
+| 🐳 **Container** | `brainlife/freesurfer:6.0.0` |
+| ⚙️ **Resources** | 8 CPUs · 58 GB memory |
+| 🔑 **Requires** | `FREESURFER_LICENSE` |
+| 🔗 **Run it** | [doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47) |
+
+#### 📥 Inputs
 
 | Input | Datatype | Required | Description |
 |---|---|---|---|
 | `freesurfer` | `neuro/freesurfer` | yes | FreeSurfer output; its aparc+aseg parcellation defines the network nodes. |
 | `life` | `neuro/LiFE` | yes | Fitted LiFE model (fe structure) with streamline weights for the tractogram. |
 
+#### 📤 Outputs
+
 | Output | Datatype | Description |
 |---|---|---|
 | `fine` | `neuro/networkneuro` | networkneuro output: connectivity matrices (CSV) weighted by streamline density and virtual lesion, intermediate MAT files and node surfaces for visualisation. |
 
-Runtime: container `brainlife/freesurfer:6.0.0`; 8 CPUs; 58 GB memory; needs `FREESURFER_LICENSE`.
-
 <!-- brainlife-app:end -->
 
-This service cconnecitity matrices using the FreeSurfer output and LiFE output. It uses the FiNE toolbox to create these results, which is distributed as part of the LiFE code. This generates and reports two matrices 
+## 🚀 Running the App
 
-This app takes as inputs a brainlife FreeSurfer output and a brainlife LiFE output and combines them to create a brainlife networkneuro output. The network neuro output consists of a pair of connectivity matrices generated from the Desikan-Killiany (aparc+aseg) cortical labels and the intermediary data created in MATLAB stored as .mat files. The input requirements should ensure that the FreeSurfer output and LiFE output are in alignment. The LiFE output contains the streamlines that have been evaluated with the LiFE algorithm and contains the fiber evaluation (fe) structure that has been previously estimated. The FreeSurfer output is used to create and extract the cortical labels (nodes) to group the streamlines (edges) to create a network structure for evaluation.
+### ☁️ On brainlife.io
 
-The primary results in the networkneuro output structure are the connectivity matrices stored in .csv file format. The itermediary data stored in the .mat files can be used by additional pipelines for further processing and are necessary for debugging. 
+Open the App at [doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47), choose a `neuro/freesurfer` output and a `neuro/LiFE` output of the same subject, and press **Execute**. The inputs must be in alignment: the LiFE output holds the streamlines evaluated with LiFE and the fitted fibre evaluation (`fe`) structure, and the FreeSurfer output provides the cortical labels (nodes) used to group the streamlines (edges) into a network.
 
-2 different measures are used to create the weighted network: streamline density and virtual lesions.
+The App uses the FiNE toolbox, distributed as part of the LiFE code, to build two weighted networks from the Desikan-Killiany (`aparc+aseg`) cortical labels:
 
-Streamline density is the number of streamlines between 2 regions corrected for the size of the ROIs they are connecting.
-Virtual lesions are an evaluation of the diffusion signal explained by a connection based on a forward model fit to the tractography.
+- **streamline density**: the number of streamlines between two regions, corrected for the size of the ROIs they connect;
+- **virtual lesion**: the diffusion signal explained by a connection, based on the forward model fit to the tractography.
 
-### Authors
-- Brent McPherson (bcmcpher@iu.edu)
+The result is a `neuro/networkneuro` dataset. The connectivity matrices are stored as CSV files; the intermediate MATLAB files can be used by further pipelines and are needed for debugging.
 
-### Contributors
-- Soichi Hayashi (hayashis@iu.edu)
+### 💻 Locally
 
-### Project director
-- Franco Pestilli (franpest@indiana.edu)
+You need [Singularity/Apptainer](https://apptainer.org/), [`jq`](https://jqlang.github.io/jq/) and a [FreeSurfer license](https://surfer.nmr.mgh.harvard.edu/registration.html). FreeSurfer 6.0.0, the compiled MATLAB code (MATLAB Runtime R2017a) and a Python VTK environment run inside containers.
 
-### Funding 
-[![NSF-BCS-1734853](https://img.shields.io/badge/NSF_BCS-1734853-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1734853)
-[![NSF-BCS-1636893](https://img.shields.io/badge/NSF_BCS-1636893-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1636893)
+1. Clone this repository and check out the branch brainlife.io runs: `git checkout 1.3`.
+2. Create `config.json` with the paths to your inputs:
 
-### References 
-[1. Caiafa and Pestilli. (2017) Multidimensional encoding of brain connectomes. Scientific Reports.](https://www.ncbi.nlm.nih.gov/pubmed/28904382)
+   ```json
+   {
+       "fsdir": "./input/freesurfer/output",
+       "fe": "./input/life/output_fe.mat"
+   }
+   ```
 
-[2. Pestilli et al. (2014) Evaluation and statistical inference for human connectomes. Nature Methods.](https://www.ncbi.nlm.nih.gov/pubmed/25194848)
+3. Export your license and run the App:
 
-[3. Fischl, B. (2012). FreeSurfer. Neuroimage, 62(2), 774-781.](https://www.sciencedirect.com/science/article/pii/S1053811912000389)
+   ```bash
+   export FREESURFER_LICENSE="$(cat ~/freesurfer/license.txt)"
+   ./main
+   ```
 
-[4. Desikan, R. S., Ségonne, F., Fischl, B., Quinn, B. T., Dickerson, B. C., Blacker, D., ... & Albert, M. S. (2006). An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest. Neuroimage, 31(3), 968-980.](https://www.sciencedirect.com/science/article/pii/S1053811906000437)
+### 🧪 Sample data
 
-## Running the App 
-
-### On Brainlife.io
-
-You can submit this App online at [https://doi.org/10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47) via the "Execute" tab.
-
-### Running Locally (on your machine)
-
-1. git clone this repo.
-2. Inside the cloned directory, create `config.json` with something like the following content with paths to your input files.
-
-```json
-{
-        "freesurfer": "./input/freesurfer/output",
-	"life": "./input/life/output_fe.mat",
-}
-```
-
-3. Launch the App by executing `main`
+Download a sample FreeSurfer and LiFE output from brainlife.io with the [brainlife CLI](https://github.com/brainlife/cli):
 
 ```bash
-./main
-```
-
-### Sample Datasets
-
-If you don't have your own input file, you can download sample datasets from Brainlife.io, or you can use [Brainlife CLI](https://github.com/brain-life/cli).
-
-```
 npm install -g brainlife
 bl login
-mkdir input
+mkdir -p input/freesurfer input/life
 bl dataset download 5a0e604116e499548135de87 && mv 5a0e604116e499548135de87 input/freesurfer/output
 bl dataset download 5a0dcb1216e499548135dd27 && mv 5a0dcb1216e499548135dd27 input/life/output_fe.mat
 ```
 
-## Output
+## 📦 Outputs
 
-The main output of this App are 3 .csv connectome files
-- count.csv
-- density.csv
-- emd.csv
-representing the streamline count, streamline density, and LiFE network edge weights, respectively.
+```text
+output/
+├── count.csv                  streamline count
+├── density.csv                streamline density
+├── emd.csv                    LiFE (virtual lesion) edge weights
+├── edge_density.png           quick view of the density network
+├── edge_LiFE.png              quick view of the LiFE network
+├── pconn.mat                  paired connections: all values from the upper triangle of the network
+├── omat.mat                   all adjacency matrices built by FiNE (nnodes × nnodes × measures)
+├── olab.mat                   the measure stored in each index of omat
+├── rois.mat                   ROI information from streamline assignment and edge weighting
+└── aparc+aseg_labels.nii.gz   inflated FreeSurfer labels used as the parcellation
+```
 
-The files `edge_density.png` and `edge_LiFE.png` are a simple visualization of the of the adjacency networks.
+The App also writes region surfaces (VTK) for visualisation on brainlife.io. All CSV and MAT matrices are 68 × 68. Label names follow the [FreeSurferColorLUT](https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/AnatomicalROI/FreeSurferColorLUT); matrix indices map to labels as follows.
 
-The file called `pconn.mat` contains the "paired connections" output which is a cell array containing all extracted values from the upper diagonal of the network.
+<details>
+<summary>Matrix index to FreeSurfer label</summary>
 
-The file called `omat.mat' contains all the adjacency networks build by the FiNE process. The dimension are nnodes x nnodes x olabs
-
-The file called `olab.mat` contains the labels that define the measure used in each index of `omat`.
-
-The file called `rois.mat` contains the information stored from the ROIs during the assignment of streamlines and the creation of the different edge weights.
-
-aparc+aseg_labels.nii.gz is the inflated labels used from FreeSurfer as the parcellation to assign streamlines to connections. 
-
-The label names are described in https://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/AnatomicalROI/FreeSurferColorLUT All output csv/mat file contains 68x68 matries. The indecies of theses matrix can be converted to the label name using the following table.
-
-| Idx | Freesufer Label Id | Label Name | R | G | B |
+| Idx | FreeSurfer label ID | Label Name | R | G | B |
 |---|---|---|---|---| --- |
 | 0 | 1001 | ctx-lh-bankssts | 25 | 100 | 40 |
 | 1 | 1002 | ctx-lh-caudalanteriorcingulate | 125 | 100 | 160 |
@@ -123,10 +117,10 @@ The label names are described in https://surfer.nmr.mgh.harvard.edu/fswiki/FsTut
 | 3 | 1005 | ctx-lh-cuneus | 220 | 20 | 100 |
 | 4 | 1006 | ctx-lh-entorhinal | 220 | 20 | 10 |
 | 5 | 1007 | ctx-lh-fusiform | 180 | 220 | 140 |
-| 6 | 1008 | ctx-lh-inferiorparietal | 220 | 60 | 220 | 
+| 6 | 1008 | ctx-lh-inferiorparietal | 220 | 60 | 220 |
 | 7 | 1009 | ctx-lh-inferiortemporal | 180 | 40 | 120 |
-| 8 | 1010 | ctx-lh-isthmuscingulate | 140 | 20 | 140 | 
-| 9 | 1011 | ctx-lh-lateraloccipital | 20 | 30 | 140 | 
+| 8 | 1010 | ctx-lh-isthmuscingulate | 140 | 20 | 140 |
+| 9 | 1011 | ctx-lh-lateraloccipital | 20 | 30 | 140 |
 | 10 | 1012 | ctx-lh-lateralorbitofrontal | 35 | 75 | 50 |
 | 11 | 1013 | ctx-lh-lingual | 225 | 140 | 140 |
 | 12 | 1014 | ctx-lh-medialorbitofrontal | 200 | 35 | 75 |
@@ -150,7 +144,7 @@ The label names are described in https://surfer.nmr.mgh.harvard.edu/fswiki/FsTut
 | 30 | 1032 | ctx-lh-frontalpole | 100 | 0 | 100 |
 | 31 | 1033 | ctx-lh-temporalpole | 70 | 70 | 70 |
 | 32 | 1034 | ctx-lh-transversetemporal | 150 | 150 | 200 |
-| 33 | 1035 | ctx-lh-insula | 255 | 192| 32
+| 33 | 1035 | ctx-lh-insula | 255 | 192 | 32 |
 | 34 | 2001 | ctx-rh-bankssts | 25 | 100 | 40 |
 | 35 | 2002 | ctx-rh-caudalanteriorcingulate | 125 | 100 | 160 |
 | 36 | 2003 | ctx-rh-caudalmiddlefrontal | 100 | 25 | 0 |
@@ -186,16 +180,56 @@ The label names are described in https://surfer.nmr.mgh.harvard.edu/fswiki/FsTut
 | 66 | 2034 | ctx-rh-transversetemporal | 150 | 150 | 200 |
 | 67 | 2035 | ctx-rh-insula | 255 | 192 | 32 |
 
-#### Product.json
+</details>
 
-The secondary output of this app is `product.json`. This file allows web interfaces, DB and API calls on the results of the processing. 
+## 🩺 Troubleshooting
 
-### Dependencies
+- **`output missing`**: `output/pconn.mat` was not produced. Check that the LiFE and FreeSurfer inputs come from the same subject and are aligned.
+- **`Please set FREESURFER_LICENSE in .bashrc`**: export the contents of your FreeSurfer `license.txt` as `FREESURFER_LICENSE` before running `./main`.
 
-This App only requires [singularity](https://www.sylabs.io/singularity/) to run. If you don't have singularity, you will need to install following dependencies.  
+## 📚 Citing
 
-  - VISTASOFT: https://github.com/vistalab/vistasoft/
-  - ENCODE: https://github.com/brain-life/encode
-  - MBA: https://github.com/francopestilli/mba
-  - FiNE: public relsease pending submission
+> [!TIP]
+> If you use this App in your work, please cite the App, the software it builds on and brainlife.io (below). GitHub's **Cite this repository** button gives the App citation in APA and BibTeX.
 
+- Caiafa CF, Pestilli F. Multidimensional encoding of brain connectomes. *Scientific Reports* (2017). [PubMed 28904382](https://www.ncbi.nlm.nih.gov/pubmed/28904382)
+- Pestilli F, et al. Evaluation and statistical inference for human connectomes. *Nature Methods* (2014). [PubMed 25194848](https://www.ncbi.nlm.nih.gov/pubmed/25194848)
+- Fischl B. FreeSurfer. *NeuroImage* 62(2):774–781 (2012). [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1053811912000389)
+- Desikan RS, Ségonne F, Fischl B, Quinn BT, Dickerson BC, Blacker D, et al. An automated labeling system for subdividing the human cerebral cortex on MRI scans into gyral based regions of interest. *NeuroImage* 31(3):968–980 (2006). [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S1053811906000437)
+- Network Neuro. brainlife.io App. [doi:10.25663/bl.app.47](https://doi.org/10.25663/bl.app.47)
+- Fischl. FreeSurfer. *NeuroImage* 62:774-781 (2012). [doi:10.1016/j.neuroimage.2012.01.021](https://doi.org/10.1016/j.neuroimage.2012.01.021)
+- Pestilli et al. Evaluation and statistical inference for human connectomes. *Nature Methods* 11:1058-1063 (2014). [doi:10.1038/nmeth.3098](https://doi.org/10.1038/nmeth.3098)
+- Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. *Nature Methods* 21:809–813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
+- Avesani P, McPherson B, Hayashi S, et al. The open diffusion data derivatives, brain data upcycling via integrated publishing of derivatives and reproducible open cloud services. *Scientific Data* 6:69 (2019). [doi:10.1038/s41597-019-0073-y](https://doi.org/10.1038/s41597-019-0073-y)
+
+## 👥 Authors
+
+- Franco Pestilli (project director)
+- Brent McPherson
+
+**Contributors:** Soichi Hayashi
+
+The App builds on [vistasoft](https://github.com/vistalab/vistasoft), [encode](https://github.com/brain-life/encode) and [MBA](https://github.com/francopestilli/mba).
+
+## 💰 Funding
+
+[![Wellcome-226486/Z/22/Z](https://img.shields.io/badge/Wellcome-226486%2FZ%2F22%2FZ-purple.svg)](https://wellcome.org/)
+[![NIH-NINDS-U24NS140384](https://img.shields.io/badge/NIH_NINDS-U24NS140384-green.svg)](https://reporter.nih.gov/project-details/11261037)
+[![NIH-NINDS-UM1NS132207](https://img.shields.io/badge/NIH_NINDS-UM1NS132207-green.svg)](https://reporter.nih.gov/project-details/11411328)
+[![NIH-NIBIB-R01EB029272](https://img.shields.io/badge/NIH_NIBIB-R01EB029272-green.svg)](https://reporter.nih.gov/project-details/10262925)
+[![NIH-NIBIB-R01EB030896](https://img.shields.io/badge/NIH_NIBIB-R01EB030896-green.svg)](https://reporter.nih.gov/project-details/10428625)
+[![NIH-NIMH-R01MH126699](https://img.shields.io/badge/NIH_NIMH-R01MH126699-green.svg)](https://reporter.nih.gov/project-details/10460628)
+[![NIH-NIDCD-R01DC020088](https://img.shields.io/badge/NIH_NIDCD-R01DC020088-green.svg)](https://reporter.nih.gov/project-details/11140284)
+[![NSF-BCS-1734853](https://img.shields.io/badge/NSF_BCS-1734853-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1734853)
+[![NSF-BCS-2203524](https://img.shields.io/badge/NSF_BCS-2203524-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2203524)
+[![NSF-IIS-1636893](https://img.shields.io/badge/NSF_IIS-1636893-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1636893)
+[![NSF-OAC-2148729](https://img.shields.io/badge/NSF_OAC-2148729-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2148729)
+[![NSF-IIS-1912270](https://img.shields.io/badge/NSF_IIS-1912270-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1912270)
+[![NSF-IIS-2148700](https://img.shields.io/badge/NSF_IIS-2148700-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2148700)
+[![NSF-OAC-1916518](https://img.shields.io/badge/NSF_OAC-1916518-blue.svg)](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1916518)
+
+<sub>brainlife.io is publicly funded, and acknowledging that support helps keep it running. This App was developed with support from Wellcome, the U.S. National Institutes of Health (including the BRAIN Initiative BRAIN CONNECTS program: The Axonal Projectome EXchange, U24NS140384, and the Center for Mesoscale Connectomics, UM1NS132207) and the U.S. National Science Foundation.</sub>
+
+## ⚖️ License
+
+[MIT](LICENSE). FreeSurfer itself is distributed under its own [license](https://surfer.nmr.mgh.harvard.edu/fswiki/FreeSurferSoftwareLicense).
